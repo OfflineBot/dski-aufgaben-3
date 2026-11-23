@@ -7,8 +7,11 @@ Arbeitsblatt 1. Alles aus der Vorlesung kommt einmal vor, erst flach, dann steig
 - **Stufe 3** – Kennzahlen rechnen und beurteilen
 
 Regeln für dich: erst ohne Nachschlagen antworten, dann mit dem Hinweis prüfen.
-Hinweise zeigen auf `dski-sources-3/bilanzierung/topics/...`.
+Hinweise zeigen auf `../../dski-sources-3/bilanzierung/topics/...`.
 Leere Zeile nach `→` ist dein Platz. Tabellenzellen mit `…` füllst du aus.
+
+Die Rechenaufgaben sind den Originalaufgaben nachgebaut, aber mit eigenen Zahlen —
+die Originale bleiben so frei zum Prüfen. Was hier bewusst fehlt, steht in Abschnitt 19.
 
 ---
 
@@ -291,6 +294,26 @@ Was ist der Bilanzeid und wen trifft er?
 
 →
 
+**8.9** Die SAS AG kauft eine Produktionsmaschine. Bestimme die Anschaffungskosten und begründe für jede Position, warum sie hineinzählt oder nicht:
+
+| Pos | Art der Kosten | Betrag | rein? | Begründung |
+|---|---|---|---|---|
+| 1 | Kaufpreis der Maschine (netto) | 80.000 € | … | … |
+| 2 | Rabatt des Verkäufers | 8.000 € | … | … |
+| 3 | Transport zum Werk | 4.000 € | … | … |
+| 4 | Fundament für die Aufstellung | 6.000 € | … | … |
+| 5 | Anbau einer Absauganlage im Mai | 12.000 € | … | … |
+| 6 | Skonto bei Zahlung binnen 10 Tagen | 1.600 € | … | … |
+| | **Anschaffungskosten** | … | | |
+
+**8.10** Die B AG kauft am 01.01.01 500 Tonnen Zucker zu 60 €/t, also für 30.000 €. Mit welchem Wert steht der Zucker am 31.12.01 in der Bilanz?
+
+| Lage am 31.12.01 | Wert in der Bilanz | Begründung |
+|---|---|---|
+| Marktpreis fällt auf 45 €/t | … | … |
+| Zucker ist feucht geworden, Restwert 10 €/t | … | … |
+| Marktpreis steigt auf 75 €/t | … | … |
+
 ## 9 GuV und Aufwendungen
 
 *Hinweis: `jahresabschlusserstellung/04-guv-und-aufwendungen`*
@@ -340,6 +363,18 @@ Was ist der Bilanzeid und wen trifft er?
 
 →
 
+**9.9** Unternehmen XY kauft eine Maschine für 120.000 €. Nutzungsdauer 6 Jahre, geschätzter Restwert am Ende 30.000 €, Satz für die geometrisch-degressive Abschreibung 20 % pro Jahr.
+
+| Jahr | Lineare Abschreibung | Degressive Abschreibung | Restbuchwert degressiv |
+|---|---|---|---|
+| 1 | … | … | … |
+| 2 | … | … | … |
+| 3 | … | … | … |
+
+Welche Methode schreibt am Anfang mehr ab, und warum will ein Unternehmen das?
+
+→
+
 ## 10 Abbildung von Erträgen
 
 *Hinweis: `jahresabschlusserstellung/05-ertraege`*
@@ -381,6 +416,15 @@ Was ist der Bilanzeid und wen trifft er?
 | Waren für 180.000 € auf Ziel verkauft | … | … |
 | Beratung außerhalb des Geschäftszwecks, 20.000 € bar | … | … |
 
+**10.7** Die Tisch AG schließt mit vier Kunden je einen Vertrag über 500 Tische zu 40 €, also je 20.000 €. Prüfe, ob Umsatzerlöse entstanden sind, und gib die betroffenen Positionen mit Vorzeichen an. Aufgabe 2 nennt das den Buchungssatz.
+
+| Kunde | Lage | Umsatz entstanden? | Positionen |
+|---|---|---|---|
+| 1 | nicht gezahlt, nicht geliefert | … | … |
+| 2 | nicht gezahlt, geliefert | … | … |
+| 3 | gezahlt, nicht geliefert | … | … |
+| 4 | gezahlt und geliefert | … | … |
+
 ## 11 Rückstellungen
 
 *Hinweis: `jahresabschlusserstellung/06-rueckstellungen`*
@@ -412,6 +456,14 @@ Was ist der Bilanzeid und wen trifft er?
 **11.5** Warum ist eine Rückstellung Aufwand des *laufenden* Jahres, obwohl noch nichts gezahlt wurde?
 
 →
+
+**11.6** Rückstellung bilden oder nicht? Begründe jeweils über die Wahrscheinlichkeit oder über die Frage, ob überhaupt eine Verpflichtung gegenüber Dritten besteht:
+
+| Fall | Rückstellung? | Begründung |
+|---|---|---|
+| Klage über 100.000 €, die Anwälte schätzen die Verlustwahrscheinlichkeit auf 80 % | … | … |
+| Dieselbe Klage, Verlustwahrscheinlichkeit 10 % | … | … |
+| Das Unternehmen beschließt, nächstes Jahr eine Anlage für 50.000 € zu kaufen | … | … |
 
 ## 12 Kapitalflussrechnung
 
@@ -458,6 +510,20 @@ Was ist der Bilanzeid und wen trifft er?
 **12.5** Warum werden Abschreibungen beim operativen Cashflow wieder addiert?
 
 →
+
+**12.6** Cash Flow oder nicht? Wenn ja, welche Art? Ein Fall in der Liste ist keiner.
+
+| Geschäftsvorfall | Cash Flow? | Art |
+|---|---|---|
+| Gesellschafter gründen die AG mit 40.000 € Einlage | … | … |
+| Kredit über 25.000 € aufgenommen | … | … |
+| Umsatzerlöse von 80.000 €, bar bezahlt | … | … |
+| Gehälter von 45.000 € überwiesen | … | … |
+| Rohstoffe für 20.000 € bar gekauft | … | … |
+| Großmaschine für 60.000 € gekauft | … | … |
+| Maschine um 10.000 € abgeschrieben | … | … |
+| Kunde kauft Ware auf Ziel für 35.000 € | … | … |
+| Dividende von 15.000 € ausgeschüttet | … | … |
 
 ## 13 Anhang und Lagebericht
 
@@ -656,15 +722,47 @@ Rechne und beurteile:
 
 →
 
+**18.3** Das Auto im Sachanlagevermögen wird bei einem Unfall zerstört und muss um 25.000 € abgeschrieben werden. Ist das Unternehmen danach überschuldet? Rechne es vor.
+
+→
+
+**18.4** Das Unternehmen muss zusätzlich eine Rückstellung bilden. Wie hoch darf sie höchstens sein, damit das Eigenkapital nicht negativ wird?
+
+→
+
+---
+
+# 19 Lücken im Material
+
+Zwei Dinge verlangen die Originalaufgaben, die in den Folien nicht stehen. Such sie nicht
+in den `topics/`, sondern hole sie von außen, wenn du darauf stößt:
+
+- **Drohverlustrückstellung** — Aufgabe 2, Kapitel 7, Aufgabe 3: die Herstellkosten steigen
+  über den vereinbarten Verkaufspreis. Die Folien behandeln nur Rückstellungen für ungewisse
+  Verbindlichkeiten, Pensionen und Steuern.
+- **Liquiditätskennzahlen** — Aufgabe 3, Analyse 4 verlangt eine Aussage zum
+  Illiquiditätsrisiko und gibt dafür vor, welche Verbindlichkeiten kurzfristig sind. Als
+  Kennzahlen der Finanzlage stehen in den Folien nur operativer Cash Flow, Zinsdeckungsgrad
+  und Eigenkapitalquote.
+
+Zwei Aufgabentypen fehlen in diesem Blatt mit Absicht, weil sie nur am Original Sinn haben:
+der komplette Durchlauf von 17 Geschäftsvorfällen bis zur aufgehenden Bilanz (Aufgabe 2,
+Kapitel 9) und der Vergleich zweier Unternehmen mit Gesamturteil (Aufgabe 3, Analyse 2 und 3).
+
 ---
 
 # Nächste Schritte
 
-Wenn das hier sitzt, weiter mit den Originalaufgaben:
+Wenn das hier sitzt, weiter mit den Originalaufgaben unter
+`../../dski-sources-3/bilanzierung/origin-tasks/`:
 
-- `bilanzierung/origin-tasks/task-1` – Aufstellungs-, Prüfungs-, Offenlegungspflicht an vier Unternehmen
-- `bilanzierung/origin-tasks/task-2` – Geschäftsvorfälle buchen, kompletten Jahresabschluss aufstellen
-- `bilanzierung/origin-tasks/task-3` – Analyse, inkl. Fußballvereine und Überschuldungsfälle
+| Aufgabe | Inhalt | Lösung zum Selbstkontrollieren |
+|---|---|---|
+| `task-1` | Aufstellungs-, Prüfungs-, Offenlegungspflicht an vier Unternehmen | keine |
+| `task-2` | Geschäftsvorfälle buchen, kompletten Jahresabschluss aufstellen | nur Kapitel 9 |
+| `task-3` | Analyse, Fußballvereine, Überschuldungsfälle | nur Analyse 1 |
+
+Wo keine Lösung liegt, kontrollierst du gegen die `topics/`.
 
 Laut `ABOUT.md`: in der Klausur kommen Varianten dieser Aufgaben plus die Theorie dahinter
 (warum rechne ich das, was bedeutet das). Alle Formeln müssen sitzen.
