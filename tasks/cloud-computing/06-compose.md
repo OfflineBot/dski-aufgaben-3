@@ -345,7 +345,8 @@ Kommt die Begrüßung?
 →
 
 **8.5** Welchen Tag hat das selbst gebaute Image bekommen?
-Prüfe mit `docker image list`.
+Prüfe mit `docker image list` und vergleiche mit dem Schema aus Aufgabe 4.2.
+Compose v2 benennt anders als der Foliensatz — schreibe beide Schemata auf.
 
 →
 

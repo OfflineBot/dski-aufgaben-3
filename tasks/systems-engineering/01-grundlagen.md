@@ -1,6 +1,6 @@
 # Systems Engineering – Grundlagen zum Ausfüllen
 
-Arbeitsblatt 1 von 4: LE 2 (Softwaretechnik) und LE 3 (Prozessmodelle).
+Arbeitsblatt 1 von 5: LE 2 (Softwaretechnik) und LE 3 (Prozessmodelle).
 
 - **Stufe 1** – Softwaretechnik: Begriffe, Prinzipien, Methoden, Komplexität
 - **Stufe 2** – Prozessmodelle: von code & fix bis inkrementell
@@ -409,6 +409,8 @@ Warum kann man nicht alle drei gleichzeitig maximieren?
 - `02-agil.md` – LE 4: Agiles Software Engineering
 - `03-modellierung.md` – LE 7, 8, 9: Use Cases, AD/BPMN, Entscheidungstabellen
 - `04-klausursimulation.md` – 100 Punkte, 120 min, im Klausurformat
+- `05-altklausur-themen.md` – LE 1, 5, 10 und Exkurs: laut `ABOUT.md` nicht
+  relevant, in den Altklausuren aber regelmäßig gefragt
 
 Originalfragen zu diesem Blatt:
 `dski-sources-3/systems-engineering/origin-tasks/task-4` (BSDS #2, acht LE-3-Fragen)

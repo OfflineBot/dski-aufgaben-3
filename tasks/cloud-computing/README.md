@@ -59,16 +59,24 @@ und Docker braucht Linux-Container.
 
 ## Aufräumen
 
-Nach jedem Blatt, damit die nächste Aufgabe auf einem sauberen Host startet:
+Nach jedem Blatt, damit die nächste Aufgabe auf einem sauberen Host startet.
+Räume **namentlich** auf — die Übungscontainer heißen in den Blättern `web`,
+`tester`, `db`, `app`, `proxy`:
 
 ```sh
-docker container list -a                 # was läuft oder liegt noch herum?
-docker container stop $(docker container list -q)
-docker container rm $(docker container list -aq)
-docker compose down --rmi=local          # im Ordner mit der compose.yaml
-docker volume prune                      # löscht alle unbenutzten Volumes
-docker image list                        # Images bleiben absichtlich liegen
+docker container list -a                      # was läuft oder liegt noch herum?
+docker container stop web tester db app       # nur die Übungscontainer
+docker container rm web tester db app
+docker compose down --rmi=local               # im Ordner mit der compose.yaml
+docker volume rm psql zeitdaten               # nur die Volumes der Blätter
+docker network rm mynet mynet2 my_net net_a net_b
 ```
 
-Vorsicht mit `docker volume prune`: in Blatt 04 ist genau das die Aufgabe,
-die Daten *nicht* zu verlieren.
+Vorsicht mit den pauschalen Varianten: `docker container stop $(docker container list -q)`,
+`docker container rm $(docker container list -aq)` und `docker volume prune` treffen
+**alles** auf dem Rechner, also auch Container und Daten anderer Projekte.
+In Blatt 04 ist es sogar die Aufgabe, die Daten im Volume *nicht* zu verlieren.
+
+Images bleiben absichtlich liegen — sie sind der Cache für das nächste Blatt.
+Mit `docker image list` siehst du, was da ist, mit `docker image rm <tag>` wird
+einzeln gelöscht.

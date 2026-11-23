@@ -1,6 +1,6 @@
 # Systems Engineering – Klausursimulation
 
-Arbeitsblatt 4 von 4. Aufbau, Punkteverteilung und Aufgabentypen sind aus den
+Arbeitsblatt 4 von 5. Aufbau, Punkteverteilung und Aufgabentypen sind aus den
 Altklausuren übernommen, die Sachverhalte sind neu.
 
 Dauer: 120 Minuten · Max. Punkte: 100 · Bestehensgrenze: 50 P · Hilfsmittel: keine
@@ -250,6 +250,9 @@ Vergleichbare Originalaufgaben mit Musterlösung bzw. Originalwortlaut:
   und fehlerhafter UC
 - `dski-sources-3/systems-engineering/origin-tasks/task-7` – alle BSDS-Fragen aus
   den Altklausuren im Originalwortlaut
+
+Themen aus LE 1, 5, 10 und dem Exkurs, die in den Altklausuren vorkommen,
+stehen in `05-altklausur-themen.md`.
 
 **Achtung bei 2a und 1i:** Die Komponenten von Scrum und die Arten von Akteuren
 werden in den Klausuren regelmäßig gefragt, stehen aber nicht in den

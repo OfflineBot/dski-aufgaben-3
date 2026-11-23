@@ -1,6 +1,6 @@
 # Systems Engineering – Modellierung zum Ausfüllen
 
-Arbeitsblatt 3 von 4: LE 7 (Use Cases), LE 8 (Aktivitätsdiagramme, BPMN),
+Arbeitsblatt 3 von 5: LE 7 (Use Cases), LE 8 (Aktivitätsdiagramme, BPMN),
 LE 9 (Entscheidungstabellen).
 
 - **Stufe 1** – Einordnung, Abgrenzung, Begriffe
@@ -819,6 +819,8 @@ acht Bedingungskombinationen ab? Weise es nach.
 # Nächste Schritte
 
 - `04-klausursimulation.md` – 100 Punkte, 120 min, im Klausurformat
+- `05-altklausur-themen.md` – LE 1, 5, 10 und Exkurs; dort stehen die
+  Ereignisreaktionsmodelle und die SOPHIST-Satzschablone
 
 Originalaufgaben zu diesem Blatt:
 

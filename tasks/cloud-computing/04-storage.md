@@ -178,7 +178,8 @@ Arbeitsverzeichnis: `projekt/zeitserver`, mit dem Image aus Blatt 02
 Standard `/data`.
 
 **6.1** Starte den Container **ohne** Volume und ruf die Seite dreimal auf.
-Welche Zahl steht bei „Besuch Nr.“, und warum?
+Welche Zahl steht bei „Besuch Nr.“? Lösche den Container, starte einen neuen und
+ruf die Seite wieder auf — welche Zahl steht jetzt da, und warum?
 
 ```sh
 →
@@ -214,8 +215,9 @@ die Seite auf. Bei welcher Zahl geht es weiter?
 
 →
 
-*Selbstkontrolle:* in 6.1 bleibt der Zähler bei `-1` oder beginnt nach jedem
-neuen Container wieder bei 1; ab 6.3 zählt er über Containergrenzen hinweg weiter.
+*Selbstkontrolle:* in 6.1 zählt der Zähler innerhalb des Containers hoch, beginnt
+aber bei jedem **neuen** Container wieder bei 1; ab 6.3 zählt er über
+Containergrenzen hinweg weiter.
 
 ## 7 Bind Mount für eine Webseite
 

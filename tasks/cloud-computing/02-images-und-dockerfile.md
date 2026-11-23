@@ -305,8 +305,8 @@ das möglich?
 
 *Selbstkontrolle:* `curl http://localhost:8080` antwortet mit
 `Hallo von <containerid>`, nach 9.4 mit `Moin von <containerid>`.
-Der Besuchszähler steht auf `-1`, weil `/data` noch nicht beschreibbar ist —
-das ist richtig und wird in Blatt 04 gelöst.
+Der Besuchszähler zählt bei jedem Aufruf hoch — aber nur innerhalb dieses
+Containers. Warum das so ist und wie man es ändert, kommt in Blatt 04.
 
 ## 10 Schichten und Build-Cache beobachten
 

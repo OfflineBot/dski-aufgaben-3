@@ -1,6 +1,6 @@
 # Systems Engineering – Agiles SE zum Ausfüllen
 
-Arbeitsblatt 2 von 4: LE 4 (Agiles Software Engineering).
+Arbeitsblatt 2 von 5: LE 4 (Agiles Software Engineering).
 
 - **Stufe 1** – Schwergewichtig gegen leichtgewichtig, Manifest, Prinzipien
 - **Stufe 2** – Verfahren: Crystal, Scrum, Methodenauswahl
@@ -459,6 +459,8 @@ oder wird der Prozess für die Zukunft gestaltet?)
 
 - `03-modellierung.md` – LE 7, 8, 9: Use Cases, AD/BPMN, Entscheidungstabellen
 - `04-klausursimulation.md` – 100 Punkte, 120 min, im Klausurformat
+- `05-altklausur-themen.md` – LE 1, 5, 10 und Exkurs; dort stehen auch
+  FISCUS, CHAOS-Studie und Brook's Law
 
 Originalfragen zu diesem Blatt:
 `dski-sources-3/systems-engineering/origin-tasks/task-5` (BSDS #3),

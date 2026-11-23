@@ -271,6 +271,9 @@ UID ≠ 0; das `touch /test` schlägt mit `Permission denied` fehl.
 
 ## 9 Image-Größe messen
 
+Achtung bei Alpine: dort heißen die Befehle zum Anlegen des Benutzers
+`addgroup -S app && adduser -S appuser -G app`, nicht `groupadd`/`useradd`.
+
 **9.1** Baue dasselbe Spring-Image dreimal, nur mit anderem Baseimage:
 `eclipse-temurin:21-jdk-noble`, `eclipse-temurin:21-jre-noble`,
 `eclipse-temurin:21-jre-alpine`. Tagge sie `greeting:jdk`, `greeting:jre`,

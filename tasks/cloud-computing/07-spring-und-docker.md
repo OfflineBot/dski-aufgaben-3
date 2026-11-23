@@ -367,7 +367,7 @@ Ursache und Korrektur:
 | Container läuft, `curl http://localhost:8080` antwortet nicht, `PORTS` ist leer | … | … |
 | `/info` zeigt `profile=default`, obwohl im Dockerfile ein Profil steht | … | … |
 | Start scheitert mit `required a single bean, but 2 were found` | … | … |
-| `greeting.text` bleibt auf `Hallo`, obwohl `-e greeting.text=Moin` gesetzt wurde | … | … |
+| `greeting.text` bleibt auf `Hallo`, obwohl in der env-Datei `GREETINGTEXT=Moin` steht | … | … |
 | Im Container läuft alles als `root` | … | … |
 | Jede Codeänderung baut das Image komplett neu | … | … |
 
