@@ -43,9 +43,29 @@ dahinter: warum rechne ich das, was bedeutet das Ergebnis. Alle Formeln müssen 
 
 *Aufgabe*: Ordne jede Position ein. Erst Aktiva oder Passiva, dann die Gruppe (Anlagevermögen, Umlaufvermögen, Eigenkapital, Rückstellung, Verbindlichkeit). Lieferwagen · Bankkredit · Kasse · gekauftes Patent · Rohstoffe im Lager · Rechnung, die ein Kunde uns noch zahlen muss · gezeichnetes Kapital · geschätzte Steuerschuld · Rechnung eines Lieferanten, die wir noch zahlen müssen
 
+```md
+Aktiva:
+- Anlagevermögen
+    - lieferwagen
+    - gekauftes patent
+- Umlaufvermögen
+    - bankkredit
+    - rechnung vom kunde
+
+Passiva:
+- Eigenkapital
+    - kasse
+- Rückstellung
+    - rohstoffe im lager
+    - geschätzte steuerschuld
+- Verbindlichkeit
+    - rechnung eines liferanden
+
+?:
+- gezeichnetes kapital
 ```
 
-```
+ich verstehe die worte noch nicht ganz. 
 
 ## 2 - Eigenkapital: Aktien ausgeben
 
@@ -72,7 +92,12 @@ dahinter: warum rechne ich das, was bedeutet das Ergebnis. Alle Formeln müssen 
 *Aufgabe*: Eine AG gibt 20.000 Aktien aus. Nennwert 1 €, Ausgabepreis 6 €. a) Wie hoch sind gezeichnetes Kapital und Kapitalrücklage? b) Um wie viel steigt die Kasse? c) Nenne zwei Merkmale von Eigenkapital und erkläre sie in je einem Satz. d) Nenne drei Arten von Eigenkapital und sag, worin sie sich unterscheiden.
 
 ```
-
+a) 20.000 * 1 = 20.000
+kapitalrücklage = 20.000 * (5-1) = 100.000
+b) 
+20.000 * 6 = 120.000
+c) 
+man "verwaltet" das riskio über das geld selber. es ist unberfistet. heißt, man kann es nutzen wann man will
 ```
 
 ## 3 - Fremdkapital: Verbindlichkeit oder Rückstellung
@@ -98,7 +123,18 @@ dahinter: warum rechne ich das, was bedeutet das Ergebnis. Alle Formeln müssen 
 *Aufgabe*: Entscheide für jeden Fall: Verbindlichkeit, Rückstellung, nur Anhang oder gar nichts? Begründe in einem Satz. a) Ein Lieferant hat Rohstoffe für 8.000 € geliefert, die Rechnung ist in 30 Tagen fällig. b) Eine Steuerprüfung läuft. Der Steuerberater rechnet mit 60 % Wahrscheinlichkeit mit einer Nachzahlung von 12.000 €. c) Ein Kunde droht mit einer Klage über 50.000 €. Die Anwälte sehen eine Chance von 10 %, dass er gewinnt. d) Die Geschäftsführung beschließt, im nächsten Jahr eine Halle für 200.000 € zu bauen und dafür einen Kredit aufzunehmen. e) Nenne zwei Merkmale von Fremdkapital und drei Arten von Verbindlichkeiten.
 
 ```
+a)
+verbindlichkeit
+b)
+rückstellung
+c)
+Anhang
+d)
+rückstellung
+e)
+man ist zeitlich befristet, man zahlt zinsen
 
+verbindlichkeit: kredit, kunde, sonstiges
 ```
 
 ## 4 - Anschaffungskosten berechnen
@@ -124,7 +160,15 @@ dahinter: warum rechne ich das, was bedeutet das Ergebnis. Alle Formeln müssen 
 *Aufgabe*: Ein Getränkehersteller kauft eine Abfüllanlage. Bestimme die Anschaffungskosten und sag zu jeder Position, warum sie dazugehört oder nicht. Kaufpreis 120.000 · Rabatt des Verkäufers 10.000 · Transport zum Werk 4.000 · Fundament und Montage 6.000 · jährliche Wartung 3.000 · Zinsen für den Kredit 2.000 · später angebauter Roboterarm 15.000
 
 ```
+120.000 kostet
+10.000 zieht ab
+4.000 kostet
+6.000 kostet
+3.000 gehört nicht dazu
+2.000 gehört nicht dazu
+15.000 noch nicht
 
+=> 120.000 - 10.000 + 4.000 + 6.000 = 120.000
 ```
 
 ## 5 - Vorräte bewerten
@@ -148,7 +192,16 @@ dahinter: warum rechne ich das, was bedeutet das Ergebnis. Alle Formeln müssen 
 *Aufgabe*: Eine Schokoladenfabrik hat 2.000 kg Kakao zu 4 € pro kg gekauft, also für 8.000 €. Mit welchem Wert steht der Kakao am Stichtag in der Bilanz, und welches Prinzip steckt dahinter? a) Der Marktpreis ist auf 3 € gefallen. b) Der Marktpreis ist auf 5 € gestiegen. c) Der Kakao ist feucht geworden und nur noch 1 € pro kg wert.
 
 ```
+2.000 zu 4€: 8.0000€
 
+a)
+2.000 zu 3€: 6.000€ mit 2.000€ abschreibung
+
+b)
+2.000 zu 5€: bleibt 8.000€
+
+c) 
+2.000 zu 1€: 2.000€ mit 6.000€ abschreibung
 ```
 
 ## 6 - Abschreibungen
@@ -174,7 +227,11 @@ dahinter: warum rechne ich das, was bedeutet das Ergebnis. Alle Formeln müssen 
 *Aufgabe*: Ein Lieferwagen kostet 60.000 €. Nutzungsdauer 6 Jahre, Restwert am Ende 6.000 €. Der Satz für die degressive Abschreibung ist 30 %. a) Wie hoch ist die lineare Abschreibung pro Jahr? b) Wie hoch ist die degressive Abschreibung im ersten und im zweiten Jahr? c) Mit welchem Wert steht der Wagen nach zwei Jahren in der Bilanz, einmal linear, einmal degressiv?
 
 ```
+a) (60.000 - 6.000) / 6 = 9.000
+b) 1: 60.000 * 0.3
+2: 60.000 * 0.3^2
 
+c) verstehe ich noch nicht, wann etwas in der bilanz ist.
 ```
 
 ## 7 - Umsatz: wann ist er entstanden
@@ -200,7 +257,13 @@ dahinter: warum rechne ich das, was bedeutet das Ergebnis. Alle Formeln müssen 
 *Aufgabe*: Eine Schreinerei hat mit vier Kunden je einen Vertrag über 200 Stühle zu 40 € geschlossen, also 8.000 € pro Kunde. Sag für jeden Kunden, ob Umsatz entstanden ist und welche zwei Positionen sich ändern. Wie hoch sind die Umsatzerlöse insgesamt? a) Kunde 1: nicht geliefert, nicht bezahlt. b) Kunde 2: geliefert, nicht bezahlt. c) Kunde 3: bezahlt, nicht geliefert. d) Kunde 4: geliefert und bezahlt.
 
 ```
+verstehe ich noch nicht ganz. die formatierung ist auch etwas schlecht
 
+mein versuch:
+a) 
+b) Kasse +
+c) Forderung + 
+d) Kasse + und Umsatzerlöse +
 ```
 
 ## 8 - Rückstellungen bilden
@@ -225,7 +288,10 @@ dahinter: warum rechne ich das, was bedeutet das Ergebnis. Alle Formeln müssen 
 *Aufgabe*: Entscheide jeweils, ob eine Rückstellung zu bilden ist und in welcher Höhe. a) Ein Kunde verklagt eine Bäckerei auf 60.000 € Schadensersatz. Die Anwälte rechnen zu 75 % mit einer Niederlage. b) Ein zweiter Kunde klagt auf 40.000 €. Die Anwälte sehen eine Chance von 15 %, dass er gewinnt. c) Die Bäckerei hat zugesagt, im nächsten Jahr 500 Torten zu je 20 € zu liefern. Am 30.12. steigen die Herstellkosten auf 23 € pro Torte. d) Wie c), aber die Herstellkosten steigen nur auf 18 €.
 
 ```
-
+a) 60.000 rückstellung
+b) keine rückstellung
+c) 500 * (23-20) = 1.500
+d) -1.000? oder bleibt eher gleich? weil noch nicht ausgeliefert?
 ```
 
 ## 9 - Cash Flow: fließt Geld, und welche Art
