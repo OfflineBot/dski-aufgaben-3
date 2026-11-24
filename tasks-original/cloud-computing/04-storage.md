@@ -64,7 +64,8 @@ erkennt man, ob ein Volume oder ein Bind Mount gemeint ist?
 →
 ```
 
-**2.4** Stoppe und lösche den Container. Prüfe, dass das Volume noch existiert.
+**2.4** Stoppe und lösche den Container. Prüfe, dass das Volume noch existiert,
+und gib seine Details aus.
 
 ```sh
 →

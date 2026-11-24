@@ -1,768 +1,483 @@
-# Bilanzierung – Einstieg zum Ausfüllen
+# Bilanzierung – Blatt 01: Einstieg
 
-Arbeitsblatt 1. Alles aus der Vorlesung kommt einmal vor, erst flach, dann steigend.
+Kein Test. Jede Station zeigt ein Thema der Vorlesung: kurze Erklärung, ein
+vorgerechnetes Beispiel, dann machst du es einmal selbst. Die Aufgaben sind auf dem
+Niveau der Übungsblätter, mit eigenen Zahlen. Deine Lösung kommt in den leeren Block.
 
-- **Stufe 1** – Begriffe und Einordnung (wer muss was, und warum)
-- **Stufe 2** – Bilanz und GuV lesen und füllen
-- **Stufe 3** – Kennzahlen rechnen und beurteilen
+- Teil A: den Jahresabschluss erstellen (Station 1 bis 10)
+- Teil B: den Jahresabschluss analysieren (Station 11 bis 14)
+- Teil C: Pflichten und Funktionen (Station 15 und 16)
+- Zum Schluss: alle Formeln aus dem Kopf (Station 17)
 
-Regeln für dich: erst ohne Nachschlagen antworten, dann mit dem Hinweis prüfen.
-Hinweise zeigen auf `../../dski-sources-3/bilanzierung/topics/...`.
-Leere Zeile nach `→` ist dein Platz. Tabellenzellen mit `…` füllst du aus.
+Zum Nachlesen: `dski-sources-3/bilanzierung/topics/`. Bei jeder Station steht der Ordner.
 
-Die Rechenaufgaben sind den Originalaufgaben nachgebaut, aber mit eigenen Zahlen —
-die Originale bleiben so frei zum Prüfen. Was hier bewusst fehlt, steht in Abschnitt 19.
+Laut `ABOUT.md` kommen in der Klausur Varianten der Übungsaufgaben und die Theorie
+dahinter: warum rechne ich das, was bedeutet das Ergebnis. Alle Formeln müssen sitzen.
 
 ---
 
-# Stufe 1 – Begriffe und Einordnung
+# Teil A - Den Jahresabschluss erstellen
 
-## 1 Einführung und Definitionen
+## 1 - Die Bilanz lesen
 
-*Hinweis: `jahresabschlussgrundlagen/01-einfuehrung-und-definitionen`*
+*Nachlesen: `jahresabschlusserstellung/01-bilanz-grundlagen`*
 
-**1.1** Was ist ein Jahresabschluss, in einem Satz? Welche drei Lagen stellt er dar?
+**Erklärung**
 
-→
+- Rechte Seite, **Passiva**: Woher kommt das Geld?
+  - Eigenkapital: von den Eigentümern, bleibt dauerhaft
+  - Rückstellungen: Schulden, die wahrscheinlich, aber noch unsicher sind
+  - Verbindlichkeiten: sichere Schulden
+- Linke Seite, **Aktiva**: Wofür wurde es verwendet?
+  - Anlagevermögen: bleibt lange im Unternehmen (Maschinen, Patente)
+  - Umlaufvermögen: wird schnell umgeschlagen (Vorräte, Forderungen, Kasse)
+- Beide Seiten sind immer gleich groß.
 
-**1.2** Wie lang ist ein Geschäftsjahr normalerweise, und wann darf es vom Kalenderjahr abweichen?
+**Beispiel**
 
-→
+- Zwei Gründer legen 50.000 € ein, das Geld liegt auf dem Konto.
+- Aktiva: Kasse 50.000 (Umlaufvermögen)
+- Passiva: Gezeichnetes Kapital 50.000 (Eigenkapital)
 
-**1.3** Was ist ein Rumpfgeschäftsjahr?
+**Deine Umsetzung**
 
-→
-
-**1.4** Die drei Pflichten rund um den Jahresabschluss, in der richtigen Reihenfolge, und wer jeweils handelt:
-
-| # | Pflicht | Wer handelt? |
-|---|---|---|
-| 1 | … | … |
-| 2 | … | … |
-| 3 | … | … |
-
-## 2 Aufstellungspflichten
-
-*Hinweis: `jahresabschlussgrundlagen/02-aufstellungspflichten`*
-
-**2.1** Welche vier Jahresabschlüsse kann ein deutsches Unternehmen aufstellen müssen?
-
-→
-
-**2.2** Welche drei Pflichten treffen jeden deutschen Kaufmann nach §§ 238–243 HGB?
-
-→
-
-**2.3** Kaufmannsarten – trage je ein Beispiel und das Merkmal ein:
-
-| Art | Merkmal | Beispiel |
-|---|---|---|
-| Ist-Kaufmann | … | … |
-| Kann-Kaufmann | … | … |
-| Form-Kaufmann | … | … |
-
-**2.4** Personengesellschaft gegen Kapitalgesellschaft:
-
-| | Haftung | Mindesteigenkapital | Beispiele |
-|---|---|---|---|
-| Personengesellschaft | … | … | … |
-| Kapitalgesellschaft | … | GmbH: … / AG: … | … |
-
-**2.5** Zwei Ausnahmen von der Aufstellungspflicht (§ 241a und § 264 (3)/(4)) – nenne sie mit den Grenzwerten, wo es welche gibt.
-
-→
-
-**2.6** Welcher Abschluss baut auf welchem auf, und wie heißt das Prinzip dahinter?
-
-→
-
-**2.7** Aufstellungsfristen: große KapGes … Monate, kleine und mittelgroße … Monate.
-Was ist der Bilanzeid und wen trifft er?
-
-→
-
-## 3 Prüfungspflichten
-
-*Hinweis: `jahresabschlussgrundlagen/03-pruefungspflichten`*
-
-**3.1** Fülle die Größenklassen nach §§ 267, 267a HGB aus:
-
-| Klasse | Bilanzsumme (Mio. €) | Umsatzerlöse (Mio. €) | Arbeitnehmer |
-|---|---|---|---|
-| Kleinst | … | … | … |
-| Klein | … | … | … |
-| Mittelgroß | … | … | … |
-| Groß | … | … | … |
-
-**3.2** Nach welcher Regel wird eine Gesellschaft in eine Klasse eingeordnet (wie viele Kriterien, über wie viele Stichtage)?
-
-→
-
-**3.3** Wann gilt eine Gesellschaft *immer* als groß, egal wie klein die Zahlen sind?
-
-→
-
-**3.4** Welche Größenklasse ist publizitätspflichtig, aber nicht prüfungspflichtig?
-
-→
-
-**3.5** Wie heißt das Ergebnis der Prüfung, und welche drei Ausgänge gibt es?
-
-→
-
-**3.6** Wer sind die Big Four?
-
-→
-
-## 4 Veröffentlichungspflichten
-
-*Hinweis: `jahresabschlussgrundlagen/04-veroeffentlichungspflichten`*
-
-**4.1** Wo wird offengelegt, und innerhalb welcher Frist nach dem Abschlussstichtag?
-
-→
-
-**4.2** Wer ist grundsätzlich von der Offenlegung befreit – und was hebt diese Befreiung auf?
-
-→
-
-**4.3** Die drei Grenzwerte des Publizitätsgesetzes (zwei von drei an zwei Stichtagen):
-
-- Bilanzsumme: …
-- Umsatzerlöse: …
-- Arbeitnehmer: …
-
-**4.4** Was ist XBRL, und warum wird es verlangt?
-
-→
-
-## 5 Funktionen des Jahresabschlusses
-
-*Hinweis: `jahresabschlussgrundlagen/05-funktionen-des-jahresabschlusses`*
-
-**5.1** Die drei Funktionen, jede mit ihrem Paragrafen:
-
-| Funktion | § | Wozu? |
-|---|---|---|
-| … | … | … |
-| … | … | … |
-| … | … | … |
-
-**5.2** Die Zahlungsbemessungsfunktion hat zwei Richtungen. Welche, und auf welchem Jahresüberschuss baut jede auf?
-
-→
-
-**5.3** Was sagt § 264 Abs. 2 HGB über das Bild, das der Jahresabschluss vermitteln muss?
-
-→
-
-**5.4** Was bedeutet das Maßgeblichkeitsprinzip, und warum will der Fiskus es so?
-
-→
-
-**5.5** Warum brauchen gerade Kapitalgesellschaften diese Informationspflichten (Stichwort Haftung)?
-
-→
-
----
-
-# Stufe 2 – Bilanz und GuV
-
-## 6 Jahresabschlussbestandteile und Grundlagen der Bilanz
-
-*Hinweis: `jahresabschlusserstellung/01-bilanz-grundlagen`*
-
-**6.1** Kreuze an, wer welche Bestandteile braucht:
-
-| | Bilanz | GuV | Anhang | Lagebericht | KFR | EK-Veränderungsrechnung |
-|---|---|---|---|---|---|---|
-| Personengesellschaft | … | … | … | … | … | … |
-| KapGes klein | … | … | … | … | … | … |
-| KapGes mittel | … | … | … | … | … | … |
-| KapGes groß | … | … | … | … | … | … |
-| Konzernabschluss | … | … | … | … | … | … |
-
-**6.2** Was zeigt die Passivseite, was die Aktivseite? Schreibe es in eigenen Worten.
-
-→
-
-**6.3** Nach welchem Kriterium sind die Positionen in § 266 HGB sortiert?
-
-→
-
-**6.4** Gliedere die Bilanz grob (Hauptbuchstaben A–D je Seite):
-
-| Aktiva | Passiva |
-|---|---|
-| A. … | A. … |
-| B. … | B. … |
-| C. … | C. … |
-| D. … | D. … |
-
-**6.5** Was heißt doppelte Buchführung, und welche Summenregel gilt dabei immer?
-
-→
-
-**6.6** Welcher Unterschied besteht zwischen Eigenkapital und Fremdkapital bei Laufzeit und Rückzahlung?
-
-→
-
-## 7 Abbildung von Finanzierungen
-
-*Hinweis: `jahresabschlusserstellung/02-abbildung-von-finanzierungen`*
-
-**7.1** Die vier Merkmale von Eigenkapital:
-
-→
-
-**7.2** Die vier Merkmale von Fremdkapital:
-
-→
-
-**7.3** Ordne die Eigenkapitalarten zu:
-
-| Art | Was ist das? |
-|---|---|
-| Gezeichnetes Kapital | … |
-| Kapitalrücklage | … |
-| Gewinnrücklage | … |
-| Gewinnvortrag | … |
-| Jahresüberschuss | … |
-
-**7.4** Verbindlichkeit oder Rückstellung? Nach welchen drei Merkmalen entscheidest du?
-
-→
-
-**7.5** Trage die Bilanzwirkung ein (Position und Betrag, Aktiva/Passiva):
-
-| Geschäftsvorfall | Aktiva | Passiva |
-|---|---|---|
-| Gesellschafter legen 50.000 € in bar ein | … | … |
-| Aktie zu 5 € ausgegeben, Nennwert 1 € | … | … |
-| Bankkredit über 100.000 € aufgenommen | … | … |
-| Kunden zahlen 20.000 € Anzahlung | … | … |
-| Rohstoffe für 8.000 € auf Ziel gekauft | … | … |
-
-**7.6** Warum ist eine erhaltene Anzahlung eine Schuld und kein Ertrag?
-
-→
-
-## 8 Abbildung von Investitionen
-
-*Hinweis: `jahresabschlusserstellung/03-abbildung-von-investitionen`*
-
-**8.1** Ergänze das Schema der Anschaffungskosten nach § 255 (1) HGB:
+*Aufgabe*: Ordne jede Position ein. Erst Aktiva oder Passiva, dann die Gruppe (Anlagevermögen, Umlaufvermögen, Eigenkapital, Rückstellung, Verbindlichkeit). Lieferwagen · Bankkredit · Kasse · gekauftes Patent · Rohstoffe im Lager · Rechnung, die ein Kunde uns noch zahlen muss · gezeichnetes Kapital · geschätzte Steuerschuld · Rechnung eines Lieferanten, die wir noch zahlen müssen
 
 ```
-  …
-- …
-+ …
-+ …
-—————————
-= Anschaffungskosten
+
 ```
 
-**8.2** Drei Gruppen des Sachanlagevermögens, drei Gruppen des immateriellen Anlagevermögens:
+## 2 - Eigenkapital: Aktien ausgeben
 
-→
+*Nachlesen: `jahresabschlusserstellung/02-abbildung-von-finanzierungen`*
 
-**8.3** Was gehört alles zu den Vorräten?
+**Erklärung**
 
-→
+- Jede Aktie hat einen Nennwert. Verkauft wird sie oft teurer, zum Ausgabepreis.
+- Gezeichnetes Kapital = Anzahl × Nennwert
+- Kapitalrücklage = Anzahl × (Ausgabepreis − Nennwert). Der Aufschlag heißt Agio.
+- Die Kasse steigt um Anzahl × Ausgabepreis.
+- Weitere Arten von Eigenkapital: Gewinnrücklage (angesammelte, nicht ausgeschüttete Gewinne), Gewinnvortrag (Rest, der ins nächste Jahr mitgenommen wird), Jahresüberschuss (Gewinn des laufenden Jahres).
+- Merkmale von Eigenkapital: trägt das Risiko, ist unbefristet, hat Anspruch auf den Gewinn, hat Mitbestimmung.
 
-**8.4** Was passiert bei diesen Käufen in der Bilanz? (beide Seiten, beide Vorzeichen)
+**Beispiel**
 
-| Geschäftsvorfall | Position + | Position − |
-|---|---|---|
-| Serveranlage für 40.000 € bar | … | … |
-| Patent für 15.000 € bar | … | … |
-| Vorräte für 25.000 € bar | … | … |
+- 1.000 Aktien, Nennwert 2 €, Ausgabepreis 9 €
+- Kasse + 9.000
+- Gezeichnetes Kapital + 2.000
+- Kapitalrücklage + 7.000
 
-**8.5** Warum verändert ein Barkauf die Bilanzsumme nicht?
+**Deine Umsetzung**
 
-→
+*Aufgabe*: Eine AG gibt 20.000 Aktien aus. Nennwert 1 €, Ausgabepreis 6 €. a) Wie hoch sind gezeichnetes Kapital und Kapitalrücklage? b) Um wie viel steigt die Kasse? c) Nenne zwei Merkmale von Eigenkapital und erkläre sie in je einem Satz. d) Nenne drei Arten von Eigenkapital und sag, worin sie sich unterscheiden.
 
-**8.6** Was sagt das strenge Niederstwertprinzip, und wofür gilt es?
+```
 
-→
+```
 
-**8.7** Woran erkennst du, dass eine außerplanmäßige Abschreibung nötig ist?
+## 3 - Fremdkapital: Verbindlichkeit oder Rückstellung
 
-→
+*Nachlesen: `jahresabschlusserstellung/02-abbildung-von-finanzierungen`*
 
-**8.8** Was besagt das Anschaffungskostenprinzip als Obergrenze?
+**Erklärung**
 
-→
+- **Verbindlichkeit**: Die Schuld ist sicher, also ob, wie hoch und wann.
+- **Rückstellung**: Die Schuld ist unsicher, aber wahrscheinlich (über 30 %).
+- Unter 30 %: keine Buchung, nur eine Beschreibung im Anhang (Eventualverbindlichkeit).
+- Ein bloßer Plan für die Zukunft ist noch gar keine Schuld.
+- Arten von Verbindlichkeiten: gegenüber Kreditinstituten (Kredit), erhaltene Anzahlungen (Kunde hat gezahlt, wir haben noch nicht geliefert), aus Lieferung und Leistung (Ware erhalten, noch nicht bezahlt), sonstige (etwa gegenüber Mitarbeitern oder dem Finanzamt).
+- Merkmale von Fremdkapital: muss zurückgezahlt werden, ist zeitlich begrenzt, hat keine Mitbestimmung, kostet Zinsen.
 
-**8.9** Die SAS AG kauft eine Produktionsmaschine. Bestimme die Anschaffungskosten und begründe für jede Position, warum sie hineinzählt oder nicht:
+**Beispiel**
 
-| Pos | Art der Kosten | Betrag | rein? | Begründung |
-|---|---|---|---|---|
-| 1 | Kaufpreis der Maschine (netto) | 80.000 € | … | … |
-| 2 | Rabatt des Verkäufers | 8.000 € | … | … |
-| 3 | Transport zum Werk | 4.000 € | … | … |
-| 4 | Fundament für die Aufstellung | 6.000 € | … | … |
-| 5 | Anbau einer Absauganlage im Mai | 12.000 € | … | … |
-| 6 | Skonto bei Zahlung binnen 10 Tagen | 1.600 € | … | … |
-| | **Anschaffungskosten** | … | | |
+- Kredit über 100.000 € aufgenommen → Verbindlichkeit gegenüber Kreditinstituten
+- Kunde klagt auf 80.000 €, der Anwalt rechnet zu 70 % mit einer Niederlage → Rückstellung 80.000
 
-**8.10** Die B AG kauft am 01.01.01 500 Tonnen Zucker zu 60 €/t, also für 30.000 €. Mit welchem Wert steht der Zucker am 31.12.01 in der Bilanz?
+**Deine Umsetzung**
 
-| Lage am 31.12.01 | Wert in der Bilanz | Begründung |
-|---|---|---|
-| Marktpreis fällt auf 45 €/t | … | … |
-| Zucker ist feucht geworden, Restwert 10 €/t | … | … |
-| Marktpreis steigt auf 75 €/t | … | … |
+*Aufgabe*: Entscheide für jeden Fall: Verbindlichkeit, Rückstellung, nur Anhang oder gar nichts? Begründe in einem Satz. a) Ein Lieferant hat Rohstoffe für 8.000 € geliefert, die Rechnung ist in 30 Tagen fällig. b) Eine Steuerprüfung läuft. Der Steuerberater rechnet mit 60 % Wahrscheinlichkeit mit einer Nachzahlung von 12.000 €. c) Ein Kunde droht mit einer Klage über 50.000 €. Die Anwälte sehen eine Chance von 10 %, dass er gewinnt. d) Die Geschäftsführung beschließt, im nächsten Jahr eine Halle für 200.000 € zu bauen und dafür einen Kredit aufzunehmen. e) Nenne zwei Merkmale von Fremdkapital und drei Arten von Verbindlichkeiten.
 
-## 9 GuV und Aufwendungen
+```
 
-*Hinweis: `jahresabschlusserstellung/04-guv-und-aufwendungen`*
+```
 
-**9.1** Die drei Zwecke der GuV:
+## 4 - Anschaffungskosten berechnen
 
-→
+*Nachlesen: `jahresabschlusserstellung/03-abbildung-von-investitionen`*
 
-**9.2** Definition Aufwand (Stichwort Eigenkapital):
+**Erklärung**
 
-→
+- Ein gekaufter Gegenstand steht mit seinen Anschaffungskosten in der Bilanz.
+- Rechnung: Kaufpreis − Rabatte + Nebenkosten + nachträgliche Anschaffungskosten
+- Nebenkosten zählen, wenn sie nötig sind, um den Gegenstand zu bekommen und betriebsbereit zu machen (Transport, Montage).
+- Nachträgliche Anschaffungskosten sind spätere Erweiterungen.
+- Nicht dazu gehören: Zinsen für die Finanzierung, laufende Kosten wie Wartung oder Reinigung, Kosten für andere Gegenstände.
 
-**9.3** Ordne jeder Aufwandsart ein Beispiel zu:
+**Beispiel**
 
-| Aufwandsart | Beispiel |
-|---|---|
-| Bestandsminderung | … |
-| Materialaufwand | … |
-| Personalaufwand | … |
-| Abschreibungen | … |
-| Sonstige betriebliche Aufwendungen | … |
-| Zinsaufwand | … |
+- Maschine: Kaufpreis 80.000, Rabatt 5.000, Transport 4.000, Montage 3.000, Kreditzinsen 1.500
+- 80.000 − 5.000 + 4.000 + 3.000 = 82.000
+- Die Zinsen bleiben draußen.
 
-**9.4** Trage Bilanz- und GuV-Wirkung ein:
+**Deine Umsetzung**
 
-| Geschäftsvorfall | Bilanz | GuV |
-|---|---|---|
-| Rohstoffe für 8.000 € verbraucht | … | … |
-| Gehälter 30.000 € überwiesen | … | … |
-| Zinsen 10.000 € bar gezahlt | … | … |
-| Maschine um 5.000 € abgeschrieben | … | … |
+*Aufgabe*: Ein Getränkehersteller kauft eine Abfüllanlage. Bestimme die Anschaffungskosten und sag zu jeder Position, warum sie dazugehört oder nicht. Kaufpreis 120.000 · Rabatt des Verkäufers 10.000 · Transport zum Werk 4.000 · Fundament und Montage 6.000 · jährliche Wartung 3.000 · Zinsen für den Kredit 2.000 · später angebauter Roboterarm 15.000
 
-**9.5** Welche drei Angaben muss ein Abschreibungsplan nach § 253 (3) HGB enthalten?
+```
 
-→
+```
 
-**9.6** Schreibe beide Formeln auf:
+## 5 - Vorräte bewerten
 
-- Lineare Abschreibung = …
-- Geometrisch-degressive Abschreibung = …
+*Nachlesen: `jahresabschlusserstellung/03-abbildung-von-investitionen`*
 
-**9.7** Planmäßige oder außerplanmäßige Abschreibung – was ist der Auslöser bei jeder?
+**Erklärung**
 
-→
+- Am Bilanzstichtag vergleichst du: Wert in den Büchern gegen aktuellen Marktwert.
+- Marktwert **niedriger**: Du musst auf den niedrigeren Wert abschreiben. Das ist das strenge Niederstwertprinzip. Es gilt bei Vorräten immer, auch wenn der Preis nur kurz gefallen ist.
+- Marktwert **höher**: Es bleibt beim alten Wert. Das ist das Anschaffungskostenprinzip. Ein Gewinn zählt erst, wenn wirklich verkauft wurde.
 
-**9.8** Richtet sich die Nutzungsdauer nach der technischen oder der wirtschaftlichen Nutzung? Woraus wird sie in der Praxis abgeleitet?
+**Beispiel**
 
-→
+- 100 Tonnen zu 30 € gekauft, Buchwert 3.000
+- Stichtag, Preis 25 € → Wert 2.500, Abschreibung 500
+- Stichtag, Preis 35 € → Wert bleibt 3.000
 
-**9.9** Unternehmen XY kauft eine Maschine für 120.000 €. Nutzungsdauer 6 Jahre, geschätzter Restwert am Ende 30.000 €, Satz für die geometrisch-degressive Abschreibung 20 % pro Jahr.
+**Deine Umsetzung**
 
-| Jahr | Lineare Abschreibung | Degressive Abschreibung | Restbuchwert degressiv |
-|---|---|---|---|
-| 1 | … | … | … |
-| 2 | … | … | … |
-| 3 | … | … | … |
+*Aufgabe*: Eine Schokoladenfabrik hat 2.000 kg Kakao zu 4 € pro kg gekauft, also für 8.000 €. Mit welchem Wert steht der Kakao am Stichtag in der Bilanz, und welches Prinzip steckt dahinter? a) Der Marktpreis ist auf 3 € gefallen. b) Der Marktpreis ist auf 5 € gestiegen. c) Der Kakao ist feucht geworden und nur noch 1 € pro kg wert.
 
-Welche Methode schreibt am Anfang mehr ab, und warum will ein Unternehmen das?
+```
 
-→
+```
 
-## 10 Abbildung von Erträgen
+## 6 - Abschreibungen
 
-*Hinweis: `jahresabschlusserstellung/05-ertraege`*
+*Nachlesen: `jahresabschlusserstellung/04-guv-und-aufwendungen`*
 
-**10.1** Definition Ertrag (Stichwort Eigenkapital):
+**Erklärung**
 
-→
+- Eine Maschine verliert jedes Jahr an Wert. Dieser Wertverlust ist Aufwand.
+- **Linear**: jedes Jahr gleich viel. (Kaufpreis − Restwert) / Nutzungsdauer
+- **Geometrisch-degressiv**: am Anfang viel, dann immer weniger. Im ersten Jahr Kaufpreis × Satz, danach jeweils der verbliebene Wert × Satz.
+- Gebucht wird an zwei Stellen: Sachanlagen sinken, in der GuV steht Aufwand „Abschreibungen“.
+- Es fließt dabei kein Geld.
 
-**10.2** Ordne die vier Ertragsarten zu:
+**Beispiel**
 
-| Ertragsart | Was ist das? |
-|---|---|
-| Umsatzerlöse | … |
-| Sonstige betriebliche Erträge | … |
-| Bestandserhöhungen | … |
-| Andere aktivierte Eigenleistungen | … |
+- Maschine 50.000, Restwert 10.000, Nutzungsdauer 5 Jahre
+- Linear: (50.000 − 10.000) / 5 = 8.000 pro Jahr
+- Degressiv mit 20 %: Jahr 1 sind 10.000, es bleiben 40.000. Jahr 2 sind 8.000.
 
-**10.3** Was ist ein schwebendes Geschäft, und wie wird es bilanziert?
+**Deine Umsetzung**
 
-→
+*Aufgabe*: Ein Lieferwagen kostet 60.000 €. Nutzungsdauer 6 Jahre, Restwert am Ende 6.000 €. Der Satz für die degressive Abschreibung ist 30 %. a) Wie hoch ist die lineare Abschreibung pro Jahr? b) Wie hoch ist die degressive Abschreibung im ersten und im zweiten Jahr? c) Mit welchem Wert steht der Wagen nach zwei Jahren in der Bilanz, einmal linear, einmal degressiv?
 
-**10.4** Was sagt das Realisationsprinzip (§ 252 Nr. 4 S. 2 HGB), und an welchem Zeitpunkt hängt es?
+```
 
-→
+```
 
-**10.5** Brötchen-Fall. Was buchst du als Verkäufer?
+## 7 - Umsatz: wann ist er entstanden
 
-| Zeitpunkt | Buchung? |
-|---|---|
-| Vertrag geschlossen, nichts erfüllt | … |
-| Verkäufer liefert, Kunde nimmt | … |
-| Kunde zahlt zuerst, Ware noch nicht übergeben | … |
+*Nachlesen: `jahresabschlusserstellung/05-ertraege`*
 
-**10.6** Trage ein:
+**Erklärung**
 
-| Geschäftsvorfall | Bilanz | GuV |
-|---|---|---|
-| Waren für 100.000 € gegen Barzahlung verkauft | … | … |
-| Waren für 180.000 € auf Ziel verkauft | … | … |
-| Beratung außerhalb des Geschäftszwecks, 20.000 € bar | … | … |
+- Ein unterschriebener Vertrag allein wird nicht gebucht. Das ist ein schwebendes Geschäft.
+- Umsatz entsteht erst, wenn **geliefert** wurde. Das ist das Realisationsprinzip.
+- Geliefert, noch nicht bezahlt: Forderung + und Umsatzerlöse +
+- Geliefert und bezahlt: Kasse + und Umsatzerlöse +
+- Bezahlt, aber noch nicht geliefert: Kasse + und „Erhaltene Anzahlungen“ +. Das ist eine Schuld, kein Umsatz.
 
-**10.7** Die Tisch AG schließt mit vier Kunden je einen Vertrag über 500 Tische zu 40 €, also je 20.000 €. Prüfe, ob Umsatzerlöse entstanden sind, und gib die betroffenen Positionen mit Vorzeichen an. Aufgabe 2 nennt das den Buchungssatz.
+**Beispiel**
 
-| Kunde | Lage | Umsatz entstanden? | Positionen |
-|---|---|---|---|
-| 1 | nicht gezahlt, nicht geliefert | … | … |
-| 2 | nicht gezahlt, geliefert | … | … |
-| 3 | gezahlt, nicht geliefert | … | … |
-| 4 | gezahlt und geliefert | … | … |
+- Ein Fahrradhändler verkauft ein Rad für 500 €.
+- Rad übergeben, Kunde zahlt nächsten Monat: Forderungen + 500, Umsatzerlöse + 500. Als Buchungssatz: Forderungen an Umsatzerlöse 500.
+- Kunde zahlt heute, Rad kommt erst in zwei Wochen: Kasse + 500, Erhaltene Anzahlungen + 500. Kein Umsatz.
 
-## 11 Rückstellungen
+**Deine Umsetzung**
 
-*Hinweis: `jahresabschlusserstellung/06-rueckstellungen`*
+*Aufgabe*: Eine Schreinerei hat mit vier Kunden je einen Vertrag über 200 Stühle zu 40 € geschlossen, also 8.000 € pro Kunde. Sag für jeden Kunden, ob Umsatz entstanden ist und welche zwei Positionen sich ändern. Wie hoch sind die Umsatzerlöse insgesamt? a) Kunde 1: nicht geliefert, nicht bezahlt. b) Kunde 2: geliefert, nicht bezahlt. c) Kunde 3: bezahlt, nicht geliefert. d) Kunde 4: geliefert und bezahlt.
 
-**11.1** Setze die Wahrscheinlichkeiten und die Bilanzwirkung ein:
+```
 
-| Begriff | Wahrscheinlichkeit | In der Bilanz? |
-|---|---|---|
-| Verbindlichkeit | … | … |
-| Rückstellung | … | … |
-| Eventualverbindlichkeit | … | … |
+```
 
-**11.2** Wo erscheinen Eventualverbindlichkeiten stattdessen?
+## 8 - Rückstellungen bilden
 
-→
+*Nachlesen: `jahresabschlusserstellung/06-rueckstellungen`*
 
-**11.3** Die drei relevanten Rückstellungsarten, je mit einem Beispiel:
+**Erklärung**
 
-→
+- Über 30 % wahrscheinlich: Rückstellung in voller Höhe. Sie steht rechts in der Bilanz, und derselbe Betrag ist Aufwand im aktuellen Jahr.
+- Welcher Aufwand: bei einer Klage sonstiger betrieblicher Aufwand, bei Steuern Steueraufwand, bei Pensionen Personalaufwand.
+- Unter 30 %: keine Rückstellung, nur Anhang.
+- Sonderfall drohender Verlust: Du hast einen Verkauf fest zugesagt, und die Herstellung kostet inzwischen mehr als der vereinbarte Preis. Dann bildest du eine Rückstellung in Höhe des Verlusts. Dieser Fall kommt im Übungsblatt 2 vor, in den Folien steht er nicht.
 
-**11.4** Trage ein:
+**Beispiel**
 
-| Geschäftsvorfall | Passiva | GuV-Aufwandsart |
-|---|---|---|
-| Schadensersatzklage über 80.000 €, Ausgang offen | … | … |
-| Geschätzte Steuerschuld 50.000 € | … | … |
-| Pensionszusage, geschätzt 30.000 € | … | … |
+- Klage über 80.000 €, Niederlage zu 70 % wahrscheinlich: Sonstige Rückstellungen + 80.000, sonstiger betrieblicher Aufwand 80.000
+- Zugesagt: 200 Stück zu 10 €. Herstellkosten jetzt 12 €. Verlust 2 € × 200 = 400 → Rückstellung 400
+- Herstellkosten 8 €: kein Verlust, keine Rückstellung
 
-**11.5** Warum ist eine Rückstellung Aufwand des *laufenden* Jahres, obwohl noch nichts gezahlt wurde?
+**Deine Umsetzung**
 
-→
+*Aufgabe*: Entscheide jeweils, ob eine Rückstellung zu bilden ist und in welcher Höhe. a) Ein Kunde verklagt eine Bäckerei auf 60.000 € Schadensersatz. Die Anwälte rechnen zu 75 % mit einer Niederlage. b) Ein zweiter Kunde klagt auf 40.000 €. Die Anwälte sehen eine Chance von 15 %, dass er gewinnt. c) Die Bäckerei hat zugesagt, im nächsten Jahr 500 Torten zu je 20 € zu liefern. Am 30.12. steigen die Herstellkosten auf 23 € pro Torte. d) Wie c), aber die Herstellkosten steigen nur auf 18 €.
 
-**11.6** Rückstellung bilden oder nicht? Begründe jeweils über die Wahrscheinlichkeit oder über die Frage, ob überhaupt eine Verpflichtung gegenüber Dritten besteht:
+```
 
-| Fall | Rückstellung? | Begründung |
-|---|---|---|
-| Klage über 100.000 €, die Anwälte schätzen die Verlustwahrscheinlichkeit auf 80 % | … | … |
-| Dieselbe Klage, Verlustwahrscheinlichkeit 10 % | … | … |
-| Das Unternehmen beschließt, nächstes Jahr eine Anlage für 50.000 € zu kaufen | … | … |
+```
 
-## 12 Kapitalflussrechnung
+## 9 - Cash Flow: fließt Geld, und welche Art
 
-*Hinweis: `jahresabschlusserstellung/07-kapitalflussrechnung`*
+*Nachlesen: `jahresabschlusserstellung/07-kapitalflussrechnung`*
 
-**12.1** Was sind Ein- und Auszahlungen, und was zählt zu den liquiden Mitteln?
+**Erklärung**
 
-→
+- Cash Flow heißt: Geld kommt wirklich herein oder geht wirklich hinaus.
+- **Operativ**: das laufende Geschäft (Verkäufe, Gehälter, Miete, Rohstoffe)
+- **Investition**: Kauf oder Verkauf von Anlagevermögen (Maschinen, Fahrzeuge, Patente)
+- **Finanzierung**: Geld von Eigentümern oder Banken und zurück (Einlagen, Kredit, Tilgung, Dividende)
+- Kein Cash Flow: Abschreibungen, Rückstellungen, Kauf und Verkauf „auf Ziel“
 
-**12.2** Die drei Cash-Flow-Arten, je mit einem Beispiel:
+**Beispiel**
 
-| Art | Was fließt dort? | Beispiel |
-|---|---|---|
-| Operativer CF | … | … |
-| Investitions-CF | … | … |
-| Finanzierungs-CF | … | … |
+- Kredit über 20.000 aufgenommen → Finanzierung, + 20.000
+- Maschine für 15.000 bar gekauft → Investition, − 15.000
+- Gehälter 8.000 überwiesen → operativ, − 8.000
+- Maschine um 3.000 abgeschrieben → kein Cash Flow
 
-**12.3** Die vier Zwecke der Kapitalflussrechnung:
+**Deine Umsetzung**
 
-→
+*Aufgabe*: Sag für jeden Vorfall, ob Geld fließt, in welche Richtung und welche Art von Cash Flow es ist. Rechne am Ende die drei Arten und die Summe aus. 1) Die Gesellschafter zahlen 80.000 € ein. 2) Ein Lieferwagen wird für 30.000 € bar gekauft. 3) Waren für 45.000 € werden bar verkauft. 4) Waren für 20.000 € werden auf Ziel verkauft. 5) 6.000 € Miete werden überwiesen. 6) Der Lieferwagen wird um 5.000 € abgeschrieben. 7) 10.000 € eines Kredits werden getilgt. 8) Rohstoffe für 12.000 € werden bar gekauft.
 
-**12.4** Rechne nach. Ergänze die Summenzeilen:
+```
 
-| Position | Betrag (€) |
-|---|---|
-| Gewinn des Geschäftsjahres | 100.000 |
-| + Abschreibungen | 20.000 |
-| + Abnahme Forderungen | 10.000 |
-| − Zunahme Vorräte | (5.000) |
-| + Zunahme Verbindlichkeiten | 15.000 |
-| **= Operativer Cashflow** | … |
-| − Erwerb Sachanlagen | (50.000) |
-| + Verkauf Finanzanlagen | 10.000 |
-| − Erwerb immaterielle VG | (5.000) |
-| **= Investitions-Cashflow** | … |
-| + Aufnahme Darlehen | 30.000 |
-| − Tilgung Darlehen | (10.000) |
-| − Dividenden | (20.000) |
-| **= Finanzierungs-Cashflow** | … |
-| **Nettoveränderung liquide Mittel** | … |
-| Liquide Mittel Anfang | 50.000 |
-| **Liquide Mittel Ende** | … |
+```
 
-**12.5** Warum werden Abschreibungen beim operativen Cashflow wieder addiert?
+## 10 - Geschäftsvorfälle eintragen und den Jahresüberschuss bestimmen
 
-→
+*Nachlesen: `jahresabschlusserstellung/`, alle Unterordner. Das ist der Aufgabentyp aus Übungsblatt 2, Kapitel 9.*
 
-**12.6** Cash Flow oder nicht? Wenn ja, welche Art? Ein Fall in der Liste ist keiner.
+**Erklärung**
 
-| Geschäftsvorfall | Cash Flow? | Art |
-|---|---|---|
-| Gesellschafter gründen die AG mit 40.000 € Einlage | … | … |
-| Kredit über 25.000 € aufgenommen | … | … |
-| Umsatzerlöse von 80.000 €, bar bezahlt | … | … |
-| Gehälter von 45.000 € überwiesen | … | … |
-| Rohstoffe für 20.000 € bar gekauft | … | … |
-| Großmaschine für 60.000 € gekauft | … | … |
-| Maschine um 10.000 € abgeschrieben | … | … |
-| Kunde kauft Ware auf Ziel für 35.000 € | … | … |
-| Dividende von 15.000 € ausgeschüttet | … | … |
+- Jeder Vorfall ändert **zwei** Positionen.
+- Trifft er nur die Bilanz, ändert sich der Gewinn nicht (Kredit, Kauf einer Maschine).
+- Trifft er die GuV, ändert sich der Gewinn (Verkauf, Gehalt, Abschreibung, Rückstellung).
+- Jahresüberschuss = Erträge − Aufwendungen. Er steht rechts im Eigenkapital. Deshalb geht die Bilanz am Ende wieder auf.
 
-## 13 Anhang und Lagebericht
+**Beispiel**
 
-*Hinweis: `jahresabschlusserstellung/08-anhang-und-lagebericht`*
+- Gründung mit 30.000: Kasse + 30.000, Gezeichnetes Kapital + 30.000
+- Barverkauf 10.000: Kasse + 10.000, Umsatzerlöse 10.000
+- Miete 4.000 überwiesen: Kasse − 4.000, sonstiger betrieblicher Aufwand 4.000
+- Jahresüberschuss: 10.000 − 4.000 = 6.000
+- Aktiva: Kasse 36.000. Passiva: Gezeichnetes Kapital 30.000 + Jahresüberschuss 6.000 = 36.000.
 
-**13.1** Welche Art von Informationen enthält der Anhang, und wozu?
+**Deine Umsetzung**
 
-→
+*Aufgabe*: Ein Unternehmen hat im ersten Jahr diese elf Vorfälle. Schreib zu jedem die zwei Positionen mit Plus oder Minus. Bestimme danach a) den Jahresüberschuss, b) den Kassenbestand, c) die Bilanzsumme. Kontrolle: Aktiva und Passiva müssen gleich sein. 1) Gründung durch Einlage von 60.000 €. 2) Bankkredit über 40.000 €. 3) Kauf einer Maschine für 50.000 € in bar. 4) Kauf von Rohstoffen für 10.000 € auf Ziel. 5) Rohstoffe für 6.000 € werden in der Produktion verbraucht. 6) Gehälter von 20.000 € werden überwiesen. 7) Verkauf von Waren für 45.000 € in bar. 8) Verkauf von Waren für 15.000 € auf Ziel. 9) Die Maschine wird um 5.000 € abgeschrieben. 10) 2.000 € Zinsen werden an die Bank gezahlt. 11) Ein Kunde klagt, das Unternehmen bildet eine Rückstellung von 7.000 €.
 
-**13.2** Zwei typische Inhalte des Anhangs:
+```
 
-→
-
-**13.3** Drei Pflichtbestandteile des Lageberichts (§ 289 Abs. 1 HGB):
-
-→
-
-**13.4** Zwei Sollbestandteile (§ 289 Abs. 2 HGB):
-
-→
-
-**13.5** Was müssen börsennotierte Unternehmen zusätzlich berichten (§§ 289b, c HGB), und welche drei Belange gehören dazu?
-
-→
+```
 
 ---
 
-# Stufe 3 – Jahresabschlussanalyse
+# Teil B - Den Jahresabschluss analysieren
 
-## 14 Aufgabenstellung und Ziele
+Bei jeder Kennzahl sind es drei Schritte: ausrechnen, mit der Faustregel vergleichen, in einem Satz deuten.
 
-*Hinweis: `jahresabschlussanalyse/01-aufgabenstellung-und-ziele`*
+## 11 - Ertragslage: Verdient das Unternehmen Geld
 
-**14.1** Was ist das Ziel einer Jahresabschlussanalyse, und wer nutzt sie?
+*Nachlesen: `jahresabschlussanalyse/02-beurteilung-der-ertragslage`*
 
-→
+**Erklärung**
 
-**14.2** Die drei Analysefelder, je in einem Satz:
+- Jahresüberschuss: sollte größer als 0 sein.
+- EBIT = Ergebnis vor Zinsen und Steuern = Jahresüberschuss + Zinsaufwand + Steuern. Zeigt, was das eigentliche Geschäft abwirft. Sollte größer als der Zinsaufwand sein.
+- Umsatzrendite = Jahresüberschuss / Umsatzerlöse × 100 %. Wie viel von 100 € Umsatz als Gewinn bleibt. Faustregel: über 5 %.
+- Eigenkapitalrentabilität = Jahresüberschuss / Eigenkapital. Ob sich die Investition für die Eigentümer lohnt. Faustregel: 6 bis 8 %.
+- Die Folie nennt das durchschnittliche Eigenkapital. Ist nur ein Jahr gegeben, nimmst du das Eigenkapital am Jahresende; so rechnet auch die Lösung zum Übungsblatt 3.
 
-| Feld | Was wird beurteilt? |
-|---|---|
-| Ertragslage | … |
-| Finanzlage | … |
-| Vermögensstruktur | … |
+**Beispiel**
 
-**14.3** Welche Teile des Jahresabschlusses werden für die Analyse ausgewertet?
+- Umsatz 200.000, Jahresüberschuss 10.000, Zinsaufwand 4.000, Steuern 6.000, Eigenkapital 100.000
+- EBIT = 10.000 + 4.000 + 6.000 = 20.000
+- Umsatzrendite = 10.000 / 200.000 = 5 %
+- Eigenkapitalrentabilität = 10.000 / 100.000 = 10 %
 
-→
+**Deine Umsetzung**
 
-## 15 Beurteilung der Ertragslage
+*Aufgabe*: Berechne Jahresüberschuss, EBIT, Umsatzrendite und Eigenkapitalrentabilität. Vergleiche jeden Wert mit der Faustregel und deute ihn in einem Satz. Daten der GuV: Umsatzerlöse 400.000 · Materialaufwand 140.000 · Personalaufwand 140.000 · Abschreibungen 30.000 · sonstiger betrieblicher Aufwand 40.000 · Zinsaufwand 10.000 · Steueraufwand 12.000. Das Eigenkapital in der Bilanz beträgt einschließlich Jahresüberschuss 128.000.
 
-*Hinweis: `jahresabschlussanalyse/02-beurteilung-der-ertragslage`*
+```
 
-**15.1** Schreibe die Formeln auf:
+```
 
-- EBIT = …
-- EBITDA = …
-- Eigenkapitalrentabilität = …
-- Umsatzrendite = …
+## 12 - Finanzlage: Bleibt das Unternehmen zahlungsfähig
 
-**15.2** Trage die Faustregeln ein:
+*Nachlesen: `jahresabschlussanalyse/03-beurteilung-der-finanzlage`*
 
-| Kennzahl | Zielwert |
-|---|---|
-| EBIT | … |
-| Jahresüberschuss | … |
-| Eigenkapitalrentabilität | … |
-| Umsatzrendite | … |
+**Erklärung**
 
-**15.3** Warum sagt der Jahresüberschuss allein wenig aus? Womit setzt man ihn ins Verhältnis?
+- Operativer Cash Flow: sollte größer sein als das, was für Investitionen ausgegeben wird.
+- Zinsdeckungsgrad = EBIT / Zinsaufwand. Wie oft die Zinsen aus dem Geschäft bezahlt werden könnten. Faustregel: mindestens 2, also 200 %.
+- Eigenkapital: muss größer als 0 sein. Es ist der Puffer für Verluste.
+- Eigenkapitalquote = Eigenkapital / Gesamtkapital × 100 %. Gesamtkapital ist die Bilanzsumme. Der Durchschnitt liegt bei 33 %.
 
-→
+**Beispiel**
 
-**15.4** Womit vergleicht ein Eigentümer seine Eigenkapitalrentabilität?
+- EBIT 20.000, Zinsaufwand 4.000 → Zinsdeckungsgrad 5, also 500 %. Gut.
+- Eigenkapital 100.000, Bilanzsumme 400.000 → Eigenkapitalquote 25 %. Unter dem Durchschnitt.
 
-→
+**Deine Umsetzung**
 
-**15.5** Typische Umsatzrendite je Branche:
+*Aufgabe*: Berechne Zinsdeckungsgrad und Eigenkapitalquote und beurteile den operativen Cash Flow. Vergleiche mit den Faustregeln und deute in je einem Satz. Daten: EBIT 50.000 · Zinsaufwand 10.000 · Eigenkapital 128.000 · Bilanzsumme 300.000 · operativer Cash Flow 55.000 · Investitions-Cash-Flow −40.000 · Finanzierungs-Cash-Flow −5.000.
 
-| Branche | Umsatzrendite |
-|---|---|
-| Handel | … |
-| Industrie / Produktion | … |
-| Dienstleistung | … |
-| Technologie / Software | … |
+```
 
-**15.6** Kiosk A: 5.000 € Umsatz, 4.900 € Kosten. Kiosk B: 5.000 € Umsatz, 3.000 € Kosten.
-Umsatzrendite A = … , B = … . Was sagt der Unterschied über die Kostenstruktur?
+```
 
-→
+## 13 - Vermögensstruktur: Wie lange ist Geld gebunden
 
-## 16 Beurteilung der Finanzlage
+*Nachlesen: `jahresabschlussanalyse/04-beurteilung-der-vermoegensstruktur`*
 
-*Hinweis: `jahresabschlussanalyse/03-beurteilung-der-finanzlage`*
+**Erklärung**
 
-**16.1** Die zwei Insolvenzgründe nach §§ 17–19 InsO, je mit der Bedingung:
+- DIO = 365 × Vorräte / Umsatzerlöse. So viele Tage liegt Ware im Lager. Je niedriger, desto besser.
+- DRO = 365 × Forderungen / Umsatzerlöse. So viele Tage brauchen Kunden zum Zahlen. Je niedriger, desto besser.
+- DPO = 365 × Verbindlichkeiten aus Lieferung und Leistung / Umsatzerlöse. So viele Tage lässt sich das Unternehmen selbst Zeit. Je höher, desto besser.
 
-| Grund | Bedingung |
-|---|---|
-| … | … |
-| … | … |
+**Beispiel**
 
-**16.2** Formeln und Faustregeln:
+- Umsatz 365.000, Vorräte 20.000, Forderungen 30.000, Verbindlichkeiten aus Lieferung und Leistung 25.000
+- DIO = 365 × 20.000 / 365.000 = 20 Tage
+- DRO = 30 Tage
+- DPO = 25 Tage
 
-- Zinsdeckungsgrad = … , Zielwert …
-- Eigenkapitalquote = … , Durchschnitt in Unternehmen …
-- Operativer Cash Flow: Faustregel …
+**Deine Umsetzung**
 
-**16.3** Welche zwei Funktionen hat das Eigenkapital für Verluste und für Gläubiger?
+*Aufgabe*: Berechne DIO, DRO und DPO und deute jeden Wert in einem Satz. Daten: Umsatzerlöse 400.000 · Vorräte 30.000 · Forderungen 40.000 · Verbindlichkeiten aus Lieferung und Leistung 30.000.
 
-→
+```
 
-**16.4** Was prüft der Zinsdeckungsgrad genau, und welches Risiko soll er ausschließen?
+```
 
-→
+## 14 - Insolvenzrisiko: Überschuldung und Illiquidität
 
-**16.5** Operating Cycle und Cash Conversion Cycle – wo beginnt und endet jeder?
+*Nachlesen: `jahresabschlussanalyse/03-beurteilung-der-finanzlage`*
 
-→
+**Erklärung**
 
-**16.6** Warum senkt späteres Bezahlen der Lieferanten den kurzfristigen Finanzierungsbedarf?
+- Es gibt zwei Gründe für eine Insolvenz.
+- **Überschuldung**: Das Eigenkapital ist kleiner als 0. Verluste, Abschreibungen und neue Rückstellungen senken das Eigenkapital. Je kleiner der Puffer, desto größer das Risiko.
+- **Illiquidität**: Das Unternehmen kann fällige Rechnungen nicht bezahlen. Vergleiche das schnell verfügbare Geld (Kasse, dazu Forderungen) mit den kurzfristigen Schulden.
+- Eine Abschreibung oder Rückstellung kostet kein Geld. Sie kann überschulden, aber nicht illiquide machen.
 
-→
+**Beispiel**
 
-## 17 Beurteilung der Vermögensstruktur
+- Eigenkapital 30.000. Eine Maschine wird zerstört und um 40.000 abgeschrieben.
+- Neues Eigenkapital: 30.000 − 40.000 = −10.000 → überschuldet
+- Die Kasse ändert sich dabei nicht.
 
-*Hinweis: `jahresabschlussanalyse/04-beurteilung-der-vermoegensstruktur`*
+**Deine Umsetzung**
 
-**17.1** Formeln und Richtung ("je höher/geringer desto besser"):
+*Aufgabe*: Zwei Firmen, beide mit einer Bilanzsumme von 1.000. Firma A, Aktiva: Anlagevermögen 700 · Vorräte 150 · Forderungen 100 · Kasse 50. Firma A, Passiva: Eigenkapital 40 · langfristige Bankdarlehen 600 · kurzfristige Bankdarlehen 260 · Verbindlichkeiten aus Lieferung und Leistung 100. Firma B, Aktiva: Anlagevermögen 500 · Vorräte 100 · Forderungen 150 · Kasse 250. Firma B, Passiva: Eigenkapital 600 · langfristige Bankdarlehen 250 · kurzfristige Bankdarlehen 50 · Verbindlichkeiten aus Lieferung und Leistung 100. a) Berechne für beide die Eigenkapitalquote. b) Welche Firma ist eher von Überschuldung bedroht, und warum? c) Vergleiche bei beiden die Kasse mit den kurzfristigen Schulden. Wo droht Illiquidität? d) Firma A muss eine Rückstellung von 60 bilden. Was passiert mit dem Eigenkapital, und ist die Firma dann überschuldet?
 
-| Kennzahl | Formel | Besser wenn |
-|---|---|---|
-| DIO | … | … |
-| DRO | … | … |
-| DPO | … | … |
+```
 
-**17.2** Was misst jede der drei Kennzahlen in eigenen Worten?
-
-→
-
-**17.3** Warum ist ein hoher Vorratsbestand teuer? Nenne zwei Kostenarten.
-
-→
-
-**17.4** Pepsico hat einen CCC von −49 Tagen, Pulte Homes +544. Was heißt das jeweils für die Finanzierung?
-
-→
+```
 
 ---
 
-# 18 Übung am Zahlenbeispiel
+# Teil C - Pflichten und Funktionen
 
-Daten aus `jahresabschlussanalyse/01-aufgabenstellung-und-ziele` (Bonitätsprüfung eines Großkunden).
+## 15 - Wer muss aufstellen, prüfen lassen, offenlegen
 
-Bilanz
+*Nachlesen: `jahresabschlussgrundlagen/02-aufstellungspflichten`, `03-pruefungspflichten`, `04-veroeffentlichungspflichten`*
 
-| Aktiva | Wert | Passiva | Wert |
-|---|---|---|---|
-| Immaterielles Anlagevermögen | 15.000 € | Einlagen der Gesellschafter | 50.000 € |
-| Sachanlagevermögen | 35.000 € | Jahresüberschuss | 17.000 € |
-| Vorräte | 15.000 € | sonstige Rückstellungen | 30.000 € |
-| Forderungen | 2.000 € | Steuerrückstellungen | 10.000 € |
-| Kasse | 160.000 € | Verb. ggü. Kreditinstituten | 100.000 € |
-| | | Verb. aus Anzahlungen | 20.000 € |
-| **Bilanzsumme** | 227.000 € | **Bilanzsumme** | 227.000 € |
+**Erklärung**
 
-GuV
+- **Aufstellen** müssen alle Kaufleute. Eine GmbH oder AG ist immer Kaufmann.
+  - Ausnahme: Einzelkaufleute mit höchstens 800.000 € Umsatz und 80.000 € Jahresüberschuss, an zwei Stichtagen in Folge.
+  - Zusätzlich gibt es den Abschluss nach Steuerrecht für das Finanzamt.
+  - Hat eine Kapitalgesellschaft Tochterunternehmen, kommt ein Konzernabschluss dazu. Ist sie börsennotiert, wird er nach IFRS erstellt.
+  - Frist: große Kapitalgesellschaften 3 Monate, kleine und mittelgroße 6 Monate.
+- **Prüfen lassen** müssen nur mittelgroße und große Kapitalgesellschaften.
+- **Offenlegen** müssen Kapitalgesellschaften, im Bundesanzeiger, innerhalb von 12 Monaten. Kleine dürfen verkürzen.
+  - Einzelkaufleute und Personengesellschaften müssen es nicht, außer sie sind sehr groß.
+- Die **Größenklassen**, jeweils Bilanzsumme · Umsatz · Arbeitnehmer:
+  - Kleinst: bis 0,35 Mio. € · bis 0,7 Mio. € · bis 10
+  - Klein: bis 6 Mio. € · bis 12 Mio. € · bis 50
+  - Mittelgroß: bis 20 Mio. € · bis 40 Mio. € · bis 250
+  - Groß: alles darüber
+  - Es zählt die Klasse, bei der zwei der drei Merkmale passen, an zwei Stichtagen in Folge.
+  - Wer börsennotiert ist, gilt immer als groß.
 
-| Aufwand | Wert | Ertrag | Wert |
-|---|---|---|---|
-| Materialaufwand | 10.000 € | Umsatzerlöse | 102.000 € |
-| Personalaufwand | 30.000 € | | |
-| Abschreibungen | 5.000 € | | |
-| Zinsaufwand | 10.000 € | | |
-| sonstiger Aufwand | 30.000 € | | |
-| **Jahresüberschuss** | 17.000 € | | |
+**Beispiel**
 
-Rechne und beurteile:
+- Bäckerei GmbH: Bilanzsumme 3 Mio. €, Umsatz 8 Mio. €, 40 Arbeitnehmer, keine Tochter
+- Alle drei Werte liegen in „klein“.
+- Aufstellen: ja, Abschluss nach HGB und nach Steuerrecht, Frist 6 Monate
+- Prüfen: nein
+- Offenlegen: ja, verkürzt, innerhalb von 12 Monaten
 
-| Kennzahl | Rechnung | Ergebnis | Beurteilung gegen die Faustregel |
-|---|---|---|---|
-| EBIT | … | … | … |
-| Umsatzrendite | … | … | … |
-| Eigenkapital | … | … | … |
-| Eigenkapitalquote | … | … | … |
-| Eigenkapitalrentabilität | … | … | … |
-| Zinsdeckungsgrad | … | … | … |
-| DIO | … | … | … |
-| DRO | … | … | … |
+**Deine Umsetzung**
 
-**18.1** Ist der Kunde liquide? Besteht Überschuldungsgefahr? Begründe mit zwei Kennzahlen.
+*Aufgabe*: Beurteile für jedes Unternehmen: Welche Abschlüsse muss es aufstellen? Muss es prüfen lassen? Muss es offenlegen, und bis wann? a) Ein Einzelkaufmann betreibt einen Blumenladen mit 250.000 € Umsatz und 30.000 € Jahresüberschuss. b) Eine Werkzeugbau GmbH hat 15 Mio. € Bilanzsumme, 30 Mio. € Umsatz, 120 Arbeitnehmer und keine Tochterunternehmen. c) Eine börsennotierte Solar AG hat 4 Mrd. € Bilanzsumme, 6 Mrd. € Umsatz, 9.000 Arbeitnehmer und 30 Tochterunternehmen.
 
-→
+```
 
-**18.2** Welche Zahl in dieser Bilanz macht dich misstrauisch, und warum?
+```
 
-→
+## 16 - Wozu der Jahresabschluss dient
 
-**18.3** Das Auto im Sachanlagevermögen wird bei einem Unfall zerstört und muss um 25.000 € abgeschrieben werden. Ist das Unternehmen danach überschuldet? Rechne es vor.
+*Nachlesen: `jahresabschlussgrundlagen/05-funktionen-des-jahresabschlusses`*
 
-→
+**Erklärung**
 
-**18.4** Das Unternehmen muss zusätzlich eine Rückstellung bilden. Wie hoch darf sie höchstens sein, damit das Eigenkapital nicht negativ wird?
+- **Dokumentation**: Alle Buchungen sind nachvollziehbar festgehalten. Das dient als Beweis, etwa bei einer Insolvenz.
+- **Zahlungsbemessung**: Aus dem Gewinn wird berechnet, wie viel gezahlt wird.
+  - an das Finanzamt: die Steuern. Der Abschluss nach HGB ist die Grundlage für die Steuerbilanz. Das nennt man Maßgeblichkeitsprinzip.
+  - an die Eigentümer: die Ausschüttung. Mehr als der Jahresüberschuss darf in der Regel nicht ausgeschüttet werden.
+- **Information**: Außenstehende sollen ein zutreffendes Bild der Vermögens-, Finanz- und Ertragslage bekommen. Das betrifft Aktionäre, Banken, Mitarbeiter, Lieferanten.
 
-→
+**Beispiel**
 
----
+- Eine Bank liest vor einer Kreditvergabe den Abschluss → Information
 
-# 19 Lücken im Material
+**Deine Umsetzung**
 
-Zwei Dinge verlangen die Originalaufgaben, die in den Folien nicht stehen. Such sie nicht
-in den `topics/`, sondern hole sie von außen, wenn du darauf stößt:
+*Aufgabe*: a) Welche Funktion steckt jeweils dahinter? 1) Das Finanzamt berechnet aus dem Gewinn die Steuer. 2) Die Aktionäre beschließen eine Dividende und dürfen dabei den Jahresüberschuss nicht überschreiten. 3) Nach einer Insolvenz prüft ein Gericht anhand der Bücher, was passiert ist. 4) Ein Lieferant schaut in den Abschluss, bevor er auf Rechnung liefert. b) Erkläre die drei Funktionen in je einem Satz mit eigenen Worten.
 
-- **Drohverlustrückstellung** — Aufgabe 2, Kapitel 7, Aufgabe 3: die Herstellkosten steigen
-  über den vereinbarten Verkaufspreis. Die Folien behandeln nur Rückstellungen für ungewisse
-  Verbindlichkeiten, Pensionen und Steuern.
-- **Liquiditätskennzahlen** — Aufgabe 3, Analyse 4 verlangt eine Aussage zum
-  Illiquiditätsrisiko und gibt dafür vor, welche Verbindlichkeiten kurzfristig sind. Als
-  Kennzahlen der Finanzlage stehen in den Folien nur operativer Cash Flow, Zinsdeckungsgrad
-  und Eigenkapitalquote.
+```
 
-Zwei Aufgabentypen fehlen in diesem Blatt mit Absicht, weil sie nur am Original Sinn haben:
-der komplette Durchlauf von 17 Geschäftsvorfällen bis zur aufgehenden Bilanz (Aufgabe 2,
-Kapitel 9) und der Vergleich zweier Unternehmen mit Gesamturteil (Aufgabe 3, Analyse 2 und 3).
+```
 
 ---
 
-# Nächste Schritte
+# Zum Schluss
+
+## 17 - Alle Formeln aus dem Kopf
+
+Erst wenn du die Stationen 1 bis 16 gemacht hast. Schreibe jede Formel auf, ohne nach oben zu schauen, und dahinter die Faustregel, wenn es eine gibt.
+
+*Aufgabe*: Anschaffungskosten · lineare Abschreibung · geometrisch-degressive Abschreibung · gezeichnetes Kapital und Kapitalrücklage bei einer Aktienausgabe · Jahresüberschuss · EBIT · Umsatzrendite · Eigenkapitalrentabilität · Zinsdeckungsgrad · Eigenkapitalquote · DIO · DRO · DPO
+
+```
+
+```
+
+---
+
+# Weiter
 
 Wenn das hier sitzt, weiter mit den Originalaufgaben unter
-`../../dski-sources-3/bilanzierung/origin-tasks/`:
+`dski-sources-3/bilanzierung/origin-tasks/`:
 
-| Aufgabe | Inhalt | Lösung zum Selbstkontrollieren |
-|---|---|---|
-| `task-1` | Aufstellungs-, Prüfungs-, Offenlegungspflicht an vier Unternehmen | keine |
-| `task-2` | Geschäftsvorfälle buchen, kompletten Jahresabschluss aufstellen | nur Kapitel 9 |
-| `task-3` | Analyse, Fußballvereine, Überschuldungsfälle | nur Analyse 1 |
+- `task-1`: Aufstellungs-, Prüfungs- und Offenlegungspflicht an vier Unternehmen. Keine Lösung hinterlegt.
+- `task-2`: Geschäftsvorfälle buchen und den kompletten Jahresabschluss aufstellen. Lösung nur zu Kapitel 9.
+- `task-3`: Analyse, Vergleich zweier Fußballvereine, Überschuldungsfälle. Lösung nur zu Analyse 1.
 
 Wo keine Lösung liegt, kontrollierst du gegen die `topics/`.
-
-Laut `ABOUT.md`: in der Klausur kommen Varianten dieser Aufgaben plus die Theorie dahinter
-(warum rechne ich das, was bedeutet das). Alle Formeln müssen sitzen.
