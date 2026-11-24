@@ -21,7 +21,7 @@ Read its `ABOUT.md` first: it decides what is relevant for the exam.
 ## Format
 
 - One file per sheet: `tasks-original/<lecture>/NN-topic.md`. Task text in German.
-- The answer goes on the line after `→` or into an empty code block.
+- the answer goes into a code block. if its just text add a ```md ```, for code the language etc.
 - First sheet of a lecture is guided: topic, short explanation, one worked
   example, then one task. No tables to fill in.
 - Later sheets: tasks first, a few understanding questions at the end.
