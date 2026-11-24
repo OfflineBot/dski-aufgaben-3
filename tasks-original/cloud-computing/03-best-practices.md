@@ -1,96 +1,15 @@
 # Blatt 03 – Best Practices
 
-Die Konventionen, nach denen in der Klausur ein Dockerfile bewertet wird:
-Baseimage, Tagging, Umgebungsvariablen, Schichtenreihenfolge, non-root.
+Die Konventionen, nach denen ein Dockerfile bewertet wird: Baseimage, Tagging,
+Umgebungsvariablen, Schichtenreihenfolge, non-root.
 
 Hinweis: `topics/docker/04-best-practices`
 
 ---
 
-# Teil A – Theorie
+## 1 Schichten richtig anordnen
 
-## 1 Baseimage
-
-**1.1** Nach welchem Kriterium wählst du ein Baseimage aus, und welche drei Vorteile
-bringt ein kleinerer Funktionsumfang?
-
-→
-
-**1.2** Trage die Größen aus den Folien ein und rechne das Verhältnis zu `alpine`:
-
-| Image | Größe | Faktor gegenüber alpine |
-| --- | --- | --- |
-| `ubuntu` | … | … |
-| `opensuse:latest` | … | … |
-| `alpine` | … | 1 |
-
-**1.3** Warum offizielle Images bevorzugen? Zwei Gründe.
-
-→
-
-**1.4** Mit welchem Tag wird ein Baseimage referenziert, und mit welchem **nie**?
-
-→
-
-**1.5** Warum müssen abgeleitete Images bei Aktualisierungen des Baseimage neu
-gebaut werden? Was passiert mit Patches, die man zur Laufzeit im Container einspielt?
-
-→
-
-## 2 Tagging
-
-**2.1** Vier Gründe, warum `latest` strikt zu vermeiden ist:
-
-→
-
-**2.2** Stable oder unique? Trage ein, wofür du welche Art verwendest und warum:
-
-| | Art des Tags | Beispiel | Warum |
-| --- | --- | --- | --- |
-| Abhängigkeiten (Baseimages) | … | … | … |
-| Eigene erstellte Images | … | … | … |
-
-**2.3** Was sollte man in unique Tags sinnvollerweise integrieren, und wovor wird
-bei Git-Tags gewarnt?
-
-→
-
-**2.4** Welches Problem entsteht konkret, wenn zwei verschiedene Versionsstände
-denselben Tag tragen (einmal in der Registry, einmal lokal auf dem Client)?
-
-→
-
-## 3 Umgebungsvariablen
-
-**3.1** Warum dürfen sensible Daten wie Passwörter nicht per `ENV` ins Dockerfile?
-Nenne den Befehl, mit dem man sie auslesen könnte.
-
-→
-
-**3.2** Wie übergibt man sensible Daten stattdessen, und was ist noch besser?
-
-→
-
-**3.3** Wann lohnt sich eine `--env-file`?
-
-→
-
-**3.4** Die Lesereihenfolge, von schwach nach stark:
-
-… → … → …
-
-**3.5** Wann `ARG` statt `ENV`?
-
-→
-
-## 4 Schichtenarchitektur
-
-**4.1** Nach welchem Kriterium ordnest du die Instruktionen im Dockerfile an?
-Was steht oben, was unten?
-
-→
-
-**4.2** Das Dockerfile aus den Folien ist falsch angeordnet. Sortiere es neu und
+**1.1** Das Dockerfile aus den Folien ist falsch angeordnet. Sortiere es neu und
 begründe die Position der verschobenen Zeile:
 
 ```dockerfile
@@ -110,52 +29,27 @@ Begründung:
 
 →
 
-**4.3** Welchen konkreten Schaden richtet das `COPY` an Position 2 bei jedem
+**1.2** Welchen konkreten Schaden richtet das `COPY` an Position 2 bei jedem
 Compiliervorgang an?
 
 →
 
-**4.4** Warum kombiniert man zusammengehörige `RUN`-Befehle mit `&&`?
+## 2 Non-Root in zwei Zeilen
 
-→
-
-**4.5** Warum sind Wildcards in `COPY` gefährlich?
-
-→
-
-## 5 Non-Root-Ausführung
-
-**5.1** Unter welchem Account laufen Prozesse im Container in der Standard­konfiguration?
-
-→
-
-**5.2** Warum ist das kritisch? (Stichwort: Ausbruch, Gleichberechtigung zum
-nativen Prozess)
-
-→
-
-**5.3** Mit welcher Instruktion wechselt man den Benutzer, und ab wann wirkt sie?
-
-→
-
-**5.4** Welchem Fallstrick muss man beim Anlegen eines neuen Benutzers ausweichen?
-
-→
-
-**5.5** Schreibe die zwei Zeilen auf, die auf Alpine einen unprivilegierten Benutzer
+**2.1** Schreibe die zwei Zeilen auf, die auf Alpine einen unprivilegierten Benutzer
 `springuser` in der Gruppe `spring` anlegen und aktivieren:
 
 ```dockerfile
 →
 ```
 
----
+**2.2** Ab wann wirkt `USER`, und warum muss man die Gruppe selbst anlegen?
 
-# Teil B – Praxis
+→
 
-## 6 Das Passwort im Image finden
+## 3 Das Passwort im Image finden
 
-**6.1** Baue ein Image aus diesem absichtlich schlechten Dockerfile
+**3.1** Baue ein Image aus diesem absichtlich schlechten Dockerfile
 (Verzeichnis egal, z. B. ein leerer Ordner):
 
 ```dockerfile
@@ -169,138 +63,91 @@ CMD ["echo","ok"]
 →
 ```
 
-**6.2** Finde das Passwort, ohne den Container zu starten. Welcher Befehl zeigt es?
+**3.2** Finde das Passwort, ohne den Container zu starten. Welcher Befehl zeigt es?
 
 ```sh
 →
 ```
 
-**6.3** Zeige, dass es auch ohne History geht: `docker image inspect` mit Blick auf
-den Abschnitt `Env`.
-
-```sh
-→
-```
-
-**6.4** Formuliere in zwei Sätzen, was das für ein Image bedeutet, das in einer
-Registry liegt.
+**3.3** Wie übergibt man das Passwort stattdessen, und was ist noch besser?
 
 →
 
 *Selbstkontrolle:* `docker image history --no-trunc <image>` enthält die Zeile mit
 `DB_PASSWORD=adw123fde234awe`.
 
-## 7 Lesereihenfolge von Umgebungsvariablen beweisen
+## 4 Lesereihenfolge von Umgebungsvariablen beweisen
 
-Arbeitsverzeichnis: `projekt/greeting`. Baue zuerst die Jar und ein Image, dessen
-Dockerfile `ENV GREETING_TEXT="aus dem Dockerfile"` setzt.
+Arbeitsverzeichnis: `projekt/greeting`. Baue zuerst die Jar:
 
 ```sh
 ./gradlew bootJar
 ```
 
-**7.1** Schreibe das Dockerfile (Baseimage `eclipse-temurin:21-jre-noble`,
-`ENV GREETING_TEXT="aus dem Dockerfile"`, Jar nach `/app/app.jar`, Exec-Notation)
-und baue `greeting:envtest`.
+**4.1** Schreibe das Dockerfile (Baseimage `eclipse-temurin:21-jre-noble`,
+`ENV GREETING_TEXT="aus dem Dockerfile"`, Jar aus `build/libs/app.jar` nach
+`/app/app.jar`, Exec-Notation) und baue `greeting:envtest`.
 
 ```dockerfile
 →
 ```
 
-**7.2** Starte den Container ohne weitere Angaben und rufe `/info` auf. Welchen
-Wert hat `greeting.text`?
+**4.2** Starte den Container auf Host-Port 8080 ohne weitere Angaben und rufe
+`/info` auf. Welchen Wert hat `greeting.text`?
 
 ```sh
 →
 ```
 
-**7.3** Starte erneut, diesmal mit `--env-file greeting.env` (die Datei setzt
+**4.3** Starte erneut, diesmal mit `--env-file greeting.env` (die Datei setzt
 `GREETING_TEXT=Guten Tag`). Welcher Wert gewinnt?
 
 ```sh
 →
 ```
 
-**7.4** Starte ein drittes Mal: `--env-file greeting.env` **und**
+**4.4** Starte ein drittes Mal: `--env-file greeting.env` **und**
 `-e GREETING_TEXT="direkt am Befehl"`. Welcher Wert gewinnt?
 
 ```sh
 →
 ```
 
-**7.5** Trage das Ergebnis ein und vergleiche mit der Regel aus 3.4:
+**4.5** Schreibe die Lesereihenfolge auf, von schwach nach stark:
 
-| Start | Wert von `greeting.text` |
-| --- | --- |
-| nur Dockerfile | … |
-| Dockerfile + env-file | … |
-| Dockerfile + env-file + `-e` | … |
+… → … → …
 
 *Selbstkontrolle:* `curl -s http://localhost:8080/info` zeigt in den drei Fällen
 drei verschiedene Werte, und der letzte gewinnt immer.
 
-## 8 Non-Root nachweisen
+## 5 Non-Root nachweisen
 
-**8.1** Starte einen Container aus deinem Image von 7.1 mit `id` als Startkommando.
+Weiter mit dem Image `greeting:envtest` aus Aufgabe 4.
+
+**5.1** Starte einen Container daraus mit `id` als Startkommando.
 Welche UID und welche Gruppe kommen zurück?
 
 ```sh
 →
 ```
 
-**8.2** Ergänze das Dockerfile so, dass die Anwendung unter einem unprivilegierten
-Benutzer läuft. Das Baseimage ist Debian-basiert (`noble`), also:
+**5.2** Ergänze das Dockerfile so, dass die Anwendung unter einem unprivilegierten
+Benutzer läuft. Das Baseimage ist Debian-basiert (`noble`), dort heißen die Befehle
+anders als auf Alpine:
 `RUN groupadd -r spring && useradd -r -g spring springuser` und danach `USER springuser`.
 
 ```dockerfile
 →
 ```
 
-**8.3** Baue neu und prüfe `id` erneut. Was hat sich geändert?
-
-→
-
-**8.4** Versuche im laufenden Container, eine Datei unter `/` anzulegen
-(`docker container exec <id> touch /test`). Was passiert jetzt, was wäre vorher
-passiert?
+**5.3** Baue neu und prüfe `id` erneut. Was hat sich geändert?
 
 →
 
 *Selbstkontrolle:* `id` liefert vorher `uid=0(root)`, danach einen Namen mit
-UID ≠ 0; das `touch /test` schlägt mit `Permission denied` fehl.
+UID ≠ 0.
 
-## 9 Image-Größe messen
-
-Achtung bei Alpine: dort heißen die Befehle zum Anlegen des Benutzers
-`addgroup -S app && adduser -S appuser -G app`, nicht `groupadd`/`useradd`.
-
-**9.1** Baue dasselbe Spring-Image dreimal, nur mit anderem Baseimage:
-`eclipse-temurin:21-jdk-noble`, `eclipse-temurin:21-jre-noble`,
-`eclipse-temurin:21-jre-alpine`. Tagge sie `greeting:jdk`, `greeting:jre`,
-`greeting:alpine`.
-
-```sh
-→
-```
-
-**9.2** Trage die Größen ein:
-
-| Tag | Baseimage | Größe |
-| --- | --- | --- |
-| `greeting:jdk` | … | … |
-| `greeting:jre` | … | … |
-| `greeting:alpine` | … | … |
-
-**9.3** Welches nimmst du für den produktiven Betrieb, und mit welchen zwei
-Argumenten aus den Best Practices begründest du das?
-
-→
-
-**9.4** Warum reicht ein JRE-Image, obwohl die Anwendung in Java geschrieben ist?
-
-→
-
-## 10 Dockerfile optimieren (vgl. Aufgabe 7)
+## 6 Dockerfile optimieren (vgl. Aufgabe 7)
 
 Gegeben dieses Dockerfile:
 
@@ -323,8 +170,7 @@ COPY ${JAR_FILE} app.jar
 CMD java -jar /app.jar -Xmx1024m
 ```
 
-**10.1** Finde alle Verstöße gegen die Best Practices. Pro Zeile eine Zeile in der
-Tabelle:
+**6.1** Finde alle Verstöße gegen die Best Practices:
 
 | Zeile | Verstoß | Korrektur |
 | --- | --- | --- |
@@ -335,32 +181,32 @@ Tabelle:
 | … | … | … |
 | … | … | … |
 
-**10.2** Schreibe das optimierte Dockerfile auf:
+**6.2** Schreibe das optimierte Dockerfile auf:
 
 ```dockerfile
 →
 ```
 
-**10.3** Wie würde der Build-Befehl aussehen?
+**6.3** Wie würde der Build-Befehl aussehen?
 
 →
 
-**10.4** Würdest du für dein Image eine stable oder eine unique Versionierung
+**6.4** Würdest du für dein Image eine stable oder eine unique Versionierung
 nutzen? Begründe.
 
 →
 
-**10.5** Warum ist es nicht sinnvoll, einen SSH-Server im Docker Container zu
+**6.5** Warum ist es nicht sinnvoll, einen SSH-Server im Docker Container zu
 installieren?
 
 →
 
-**10.6** Kann man den Befehl `mvn clean install` ins Dockerfile aufnehmen?
+**6.6** Kann man den Befehl `mvn clean install` ins Dockerfile aufnehmen?
 Was ist die Konsequenz?
 
 →
 
-## 11 Zweites Optimieren (vgl. Hands-On der Folien)
+## 7 Zweites Optimieren (vgl. Hands-On der Folien)
 
 Gegeben:
 
@@ -374,33 +220,23 @@ COPY target/* app/
 CMD java -jar app.jar
 ```
 
-**11.1** Fünf Verbesserungen sind möglich. Nenne sie als Schlagworte.
+**7.1** Fünf Verbesserungen sind möglich. Nenne sie als Schlagworte.
 
 →
 
-**11.2** Schreibe die verbesserte Fassung auf:
+**7.2** Schreibe die verbesserte Fassung auf:
 
 ```dockerfile
 →
 ```
 
-**11.3** Wie viele Schichten hat die Ausgangsfassung, wie viele deine Fassung?
+## 8 ARG gegen ENV
 
-→
-
-**11.4** Welche der Verbesserungen ist eine *Sicherheits*verbesserung, welche eine
-*Performance*verbesserung?
-
-→
-
-## 12 ARG gegen ENV
-
-**12.1** Baue ein Image aus diesem Dockerfile und übergib beim Bauen
-`--build-arg BUILD_ID=42`:
+**8.1** Baue ein Image aus diesem Dockerfile und starte einen Container daraus:
 
 ```dockerfile
 FROM alpine:3.20
-ARG BUILD_ID=unbekannt
+ARG BUILD_ID=42
 ENV APP_STAGE=prod
 RUN echo "gebaut als $BUILD_ID" > /build.txt
 CMD ["sh","-c","cat /build.txt; echo stage=$APP_STAGE; echo build=$BUILD_ID"]
@@ -410,16 +246,44 @@ CMD ["sh","-c","cat /build.txt; echo stage=$APP_STAGE; echo build=$BUILD_ID"]
 →
 ```
 
-**12.2** Starte den Container. Welche der drei Ausgaben ist leer, und warum?
+**8.2** Welche der drei Ausgaben ist leer, und warum?
 
 →
 
-**12.3** Formuliere die Regel: Wann `ARG`, wann `ENV`?
+**8.3** Formuliere die Regel: Wann `ARG`, wann `ENV`?
 
 →
 
-*Selbstkontrolle:* `/build.txt` enthält `gebaut als 42`, `stage=prod`, aber
-`build=` ist leer — `ARG` existiert zur Laufzeit nicht mehr.
+*Selbstkontrolle:* die Ausgabe ist `gebaut als 42`, `stage=prod` und ein leeres
+`build=` — `ARG` existiert zur Laufzeit nicht mehr.
+
+## 9 Verständnis
+
+**9.1** Stable oder unique? Trage ein, wofür du welche Art verwendest und warum:
+
+| | Art des Tags | Beispiel | Warum |
+| --- | --- | --- | --- |
+| Abhängigkeiten (Baseimages) | … | … | … |
+| Eigene erstellte Images | … | … | … |
+
+**9.2** Warum ist `latest` zu vermeiden? Zwei Gründe.
+
+→
+
+**9.3** Nach welchem Kriterium wählst du ein Baseimage aus, und warum bevorzugt man
+offizielle Images?
+
+→
+
+**9.4** Warum kombiniert man zusammengehörige `RUN`-Befehle mit `&&`, und warum
+sind Wildcards in `COPY` gefährlich?
+
+→
+
+**9.5** Warum müssen abgeleitete Images neu gebaut werden, wenn das Baseimage
+aktualisiert wurde?
+
+→
 
 ---
 

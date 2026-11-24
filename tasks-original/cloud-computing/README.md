@@ -1,7 +1,9 @@
 # Cloud Computing – Aufgabenblätter
 
-Alles aus dem Foliensatz „3-Docker“, als Aufgaben. Theorie nur so viel, wie zum
-Verständnis gehört — der Rest ist Tippen, Bauen, Starten und Erklären.
+Der Foliensatz „3-Docker“ als Aufgaben: Tippen, Bauen, Starten und Erklären.
+Reine Abfrage-Theorie gibt es hier nicht, weil sie laut `ABOUT.md` nicht
+drankommt. Am Ende jedes Blattes stehen ein paar Verständnisfragen zu dem, was
+du vorher ausgeführt hast.
 
 Laut `ABOUT.md` der Vorlesung gilt für die Klausur:
 
@@ -17,8 +19,8 @@ beide Richtungen, Blatt 07 Spring, Blatt 09 simuliert die Klausur.
 
 | Blatt | Thema | Quelle (Unterthema in `topics/docker/`) |
 | --- | --- | --- |
-| [01](01-grundlagen-und-container.md) | Paradigma, Architektur, Container starten und kontrollieren | `01-grundlagen`, `02-docker-container` |
-| [02](02-images-und-dockerfile.md) | Schichten, Tags, Registry, eigenes Dockerfile | `03-docker-image` |
+| [01](01-grundlagen-und-container.md) | Container starten, überwachen, stoppen, löschen | `02-docker-container` |
+| [02](02-images-und-dockerfile.md) | Images, Tags, Build-Cache, eigenes Dockerfile | `03-docker-image` |
 | [03](03-best-practices.md) | Baseimage, Tagging, Umgebungsvariablen, non-root | `04-best-practices` |
 | [04](04-storage.md) | Volumes, Bind Mounts, Persistenz | `05-docker-storage` |
 | [05](05-networking.md) | bridge, host, none, Namensauflösung | `06-docker-networking` |
@@ -29,12 +31,19 @@ beide Richtungen, Blatt 07 Spring, Blatt 09 simuliert die Klausur.
 
 ## So arbeitest du damit
 
-Jedes Blatt hat zwei Arten von Aufgaben:
+Jedes Blatt hat denselben Aufbau:
 
-- **Theorie** – erst ohne Nachschlagen antworten, danach mit dem Hinweis prüfen.
-  Die leere Zeile nach `→` ist dein Platz, Tabellenzellen mit `…` füllst du aus.
-- **Praxis** – wirklich ausführen. Unter *Selbstkontrolle* steht, woran du siehst,
+- **Befehle kennen** – ein kurzer Block am Anfang: was macht welcher Befehl,
+  welche Option, welche Instruktion. Erst ohne Nachschlagen ausfüllen.
+- **Aufgaben** – wirklich ausführen. Unter *Selbstkontrolle* steht, woran du siehst,
   dass es stimmt. Wenn die Kontrolle nicht passt, ist die Aufgabe nicht fertig.
+- **Verständnis** – wenige Fragen am Ende, die sich aus den Aufgaben beantworten lassen.
+
+Die leere Zeile nach `→` ist dein Platz, Tabellenzellen mit `…` füllst du aus.
+Blatt 08 und 09 werden nur geschrieben, nicht ausgeführt.
+
+Jedes Blatt lässt sich für sich bearbeiten. Braucht eine Aufgabe ein Dockerfile aus
+einem früheren Blatt, steht es dort noch einmal.
 
 Hinweise zeigen auf `dski-sources-3/cloud-computing/topics/docker/...`.
 Die Originalaufgaben der Vorlesung samt Lösungen liegen in
@@ -46,10 +55,11 @@ welche dazu passt. Dort schaust du nach, wenn du nicht weiterkommst.
 | Was | Prüfen mit | Nötig für |
 | --- | --- | --- |
 | Docker Engine | `docker --version` | alle Blätter |
-| Docker Compose v2 | `docker compose version` | Blatt 06, 08, 09 |
+| Docker Compose v2 | `docker compose version` | Blatt 06, 07, 09 |
 | Internetzugang | `docker image pull alpine:3.20` | alle (Images kommen von Docker Hub) |
-| JDK 21 oder neuer | `java -version` | Blatt 02, 04 (Zeitserver), 07 (Jar bauen) |
-| `curl` oder ein Browser | `curl --version` | alle Praxisaufgaben mit HTTP |
+| JDK 21 oder neuer | `java -version` | Blatt 03, 06, 07, 09 (Jar bauen) |
+| `curl` oder ein Browser | `curl --version` | alle Aufgaben mit HTTP |
+| freier Host-Port 8080 | `docker container list` | fast alle Blätter |
 
 Alles, was die Aufgaben an Code brauchen, liegt in [`projekt/`](projekt/README.md).
 Gradle musst du nicht installieren, der Wrapper liegt im Projekt.
@@ -61,15 +71,15 @@ und Docker braucht Linux-Container.
 
 Nach jedem Blatt, damit die nächste Aufgabe auf einem sauberen Host startet.
 Räume **namentlich** auf — die Übungscontainer heißen in den Blättern `web`,
-`tester`, `db`, `app`, `proxy`:
+`tester`, `allein`, `db`, `app`:
 
 ```sh
 docker container list -a                      # was läuft oder liegt noch herum?
-docker container stop web tester db app       # nur die Übungscontainer
-docker container rm web tester db app
+docker container stop web tester allein db app   # nur die Übungscontainer
+docker container rm web tester allein db app
 docker compose down --rmi=local               # im Ordner mit der compose.yaml
 docker volume rm psql zeitdaten               # nur die Volumes der Blätter
-docker network rm mynet mynet2 my_net net_a net_b
+docker network rm mynet my_net
 ```
 
 Vorsicht mit den pauschalen Varianten: `docker container stop $(docker container list -q)`,

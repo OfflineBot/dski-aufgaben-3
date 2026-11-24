@@ -3,11 +3,9 @@
 Laut `ABOUT.md` kommt genau das in der Klausur: „CLI command zu Docker Script und
 vice versa“. Hier gibt es nichts zu starten, nur zu schreiben. Ohne Nachschlagen.
 
-Hinweise: alle Unterthemen in `topics/docker/`
-
 ---
 
-# Teil A – Prosa → CLI
+# Teil A – Beschreibung → CLI
 
 Schreibe für jede Beschreibung den vollständigen Befehl.
 
@@ -33,7 +31,7 @@ Image `ubuntu`.
 ```
 
 **1.4** Verschaffe dir eine interaktive Shell in einem **laufenden** Container mit
-der Id `ac1`.
+dem Namen `web`.
 
 ```sh
 →
@@ -45,85 +43,70 @@ der Id `ac1`.
 →
 ```
 
-**1.6** Gib die Logausgaben des Containers `ac1` aus.
+**1.6** Gib die Logausgaben des Containers `web` aus, danach seine Ressourcennutzung.
 
 ```sh
 →
 ```
 
 **1.7** Lade das Image `openjdk:16-jdk-slim` herunter, ohne einen Container zu
-starten.
+starten, und zeige danach seine Schichten.
 
 ```sh
 →
 ```
 
-**1.8** Zeige die Schichten dieses Images.
-
-```sh
-→
-```
-
-**1.9** Baue aus dem Dockerfile im aktuellen Verzeichnis ein Image mit dem Tag
+**1.8** Baue aus dem Dockerfile im aktuellen Verzeichnis ein Image mit dem Tag
 `greeting:1.4.2`.
 
 ```sh
 →
 ```
 
-**1.10** Gib dem Image `greeting:1.4.2` zusätzlich den Tag `greeting:stable`.
+**1.9** Gib dem Image `greeting:1.4.2` zusätzlich den Tag `greeting:stable`.
 
 ```sh
 →
 ```
 
-**1.11** Erstelle ein Volume `psql` und starte `postgres:17.6` damit an
-`/var/lib/postgresql/data`, mit dem Passwort `mypassword` als Umgebungsvariable.
+**1.10** Erstelle ein Volume `psql` und starte `postgres:17.6` im Hintergrund damit
+an `/var/lib/postgresql/data`, mit dem Passwort `mypassword` in der
+Umgebungsvariable `POSTGRES_PASSWORD`.
 
 ```sh
 →
 ```
 
-**1.12** Binde das Host-Verzeichnis `/home/student/site` schreibgeschützt an
-`/usr/share/nginx/html` im Container.
+**1.11** Starte `nginx` im Hintergrund und binde das Host-Verzeichnis
+`/home/student/site` an `/usr/share/nginx/html` im Container.
 
 ```sh
 →
 ```
 
-**1.13** Erstelle ein Bridge-Netzwerk `mynet` und starte darin einen Container
-`app` aus dem Image `greeting:1.0`.
+**1.12** Erstelle ein Bridge-Netzwerk `mynet` und starte darin im Hintergrund einen
+Container `app` aus dem Image `greeting:1.0`.
 
 ```sh
 →
 ```
 
-**1.14** Starte einen Container, der den Netzwerkstack des Hosts nutzt.
+**1.13** Starte `nginx` so, dass der Container den Netzwerkstack des Hosts nutzt.
+Danach einen zweiten völlig ohne Netzwerk.
 
 ```sh
 →
 ```
 
-**1.15** Starte einen Container völlig ohne Netzwerk.
+**1.14** Starte `greeting:1.0` im Hintergrund mit allen Variablen aus der Datei
+`greeting.env` und überschreibe zusätzlich `SPRING_PROFILES_ACTIVE` mit `dev`.
 
 ```sh
 →
 ```
 
-**1.16** Starte `greeting:1.0` mit allen Variablen aus der Datei `greeting.env`
-und überschreibe zusätzlich `SPRING_PROFILES_ACTIVE` mit `dev`.
-
-```sh
-→
-```
-
-**1.17** Stoppe und lösche alle laufenden Container (in zwei Befehlen).
-
-```sh
-→
-```
-
-**1.18** Lösche alle unbenutzten Volumes.
+**1.15** Stoppe und lösche den Container `web`. Lösche danach das Volume `psql`
+und alle unbenutzten Volumes.
 
 ```sh
 →
@@ -131,7 +114,7 @@ und überschreibe zusätzlich `SPRING_PROFILES_ACTIVE` mit `dev`.
 
 ---
 
-# Teil B – CLI → Prosa
+# Teil B – CLI → Beschreibung
 
 Schreibe für jeden Befehl in einem Satz, was er tut — und wo eine Falle steckt.
 
@@ -142,17 +125,16 @@ Schreibe für jeden Befehl in einem Satz, was er tut — und wo eine Falle steck
 | `docker container run -d --name db -e POSTGRES_PASSWORD=pw -v psql:/var/lib/postgresql/data postgres:17.6` | … |
 | `docker container run -d --net=host nginx` | … |
 | `docker container exec -it web bash` | … |
-| `docker image build -t app:$(date +%Y%m%d) .` | … |
-| `docker container run -v $(pwd):/src -w /src eclipse-temurin:21-jdk-alpine javac Zeitserver.java` | … |
-| `docker container stop $(docker container list -q)` | … |
-| `docker compose down --rmi=local` | … |
 | `docker container run -d -p 80:80 --net=my_net --name web nginx` | … |
+| `docker compose up --build` | … |
+| `docker compose down --rmi=local` | … |
 
 ---
 
 # Teil C – CLI → compose.yaml
 
-Übersetze jeden Befehl in eine `compose.yaml`. Der Servicename steht jeweils dabei.
+Übersetze jeden Befehl in eine vollständige `compose.yaml`. Der Servicename steht
+jeweils dabei.
 
 **3.1** Service `web`:
 
@@ -167,6 +149,7 @@ docker container run -d -p 8080:80 nginx
 **3.2** Service `db`:
 
 ```sh
+docker volume create psql
 docker container run -d --name db \
   -e POSTGRES_PASSWORD=mypassword \
   -v psql:/var/lib/postgresql/data \
@@ -177,12 +160,15 @@ docker container run -d --name db \
 →
 ```
 
-**3.3** Services `web` und `tester`, beide im Netz `mynet`:
+**3.3** Services `web` und `db`, beide im Netz `mynet`:
 
 ```sh
 docker network create mynet --driver=bridge
+docker volume create psql
 docker container run -d --name web --net=mynet -p 8080:80 nginx
-docker container run -it --name tester --net=mynet busybox sh
+docker container run -d --name db --net=mynet \
+  -e POSTGRES_PASSWORD=mypassword \
+  -v psql:/var/lib/postgresql/data postgres:17.6
 ```
 
 ```yaml
@@ -217,7 +203,8 @@ docker container run -d -p 8080:80 \
 
 # Teil D – compose.yaml → CLI
 
-Schreibe die `docker`-Befehle, die dasselbe erreichen. Vergiss das Netzwerk nicht.
+Schreibe die `docker`-Befehle, die dasselbe erreichen, in der richtigen Reihenfolge.
+Vergiss Netzwerk und Volume nicht.
 
 **4.1**
 
@@ -267,10 +254,12 @@ services:
       - psql:/var/lib/postgresql/data
     networks:
       - mynet
-  adminer:
-    image: adminer
+  web:
+    image: nginx
     ports:
-      - "8081:8080"
+      - "8081:80"
+    volumes:
+      - ./site:/usr/share/nginx/html
     networks:
       - mynet
 
@@ -285,8 +274,7 @@ networks:
 →
 ```
 
-**4.4** Welche Angabe aus dieser Datei lässt sich mit `docker container run`
-**nicht** in einem Befehl ausdrücken?
+**4.4** Welche Befehle ersetzen diesen Service? Es sind zwei.
 
 ```yaml
 services:
@@ -298,31 +286,27 @@ services:
       - "8080:8080"
 ```
 
+```sh
 →
+```
 
 ---
 
 # Teil E – Dockerfile ⇄ CLI
 
-**5.1** Trage ein, womit man die Wirkung der Instruktion zur Laufzeit erreicht oder
+**5.1** Trage ein, womit man die Wirkung der Instruktion beim `run` ergänzt oder
 überschreibt:
 
-| Instruktion im Dockerfile | Entsprechung / Überschreibung beim `run` |
+| Instruktion im Dockerfile | Entsprechung beim `run` |
 | --- | --- |
 | `ENV GREETING_TEXT=Hallo` | … |
 | `EXPOSE 8080` | … |
 | `VOLUME /data` | … |
-| `USER springuser` | … |
-| `WORKDIR /app` | … |
 | `CMD ["java","-jar","app.jar"]` | … |
 
-**5.2** Welche Instruktionen haben **keine** Entsprechung beim `run`, weil sie nur
-zur Bauzeit wirken?
-
-→
-
-**5.3** Gegeben dieses Dockerfile. Schreibe den `build`- und den `run`-Befehl, der
-die Anwendung auf Host-Port 3030 erreichbar macht und das Profil auf `test` setzt:
+**5.2** Gegeben dieses Dockerfile. Schreibe den `build`- und den `run`-Befehl, der
+die Anwendung im Hintergrund auf Host-Port 3030 erreichbar macht und das Profil auf
+`test` setzt:
 
 ```dockerfile
 FROM eclipse-temurin:21-jre-noble
@@ -337,7 +321,7 @@ CMD ["java","-jar","app.jar"]
 →
 ```
 
-**5.4** Schreibe für dasselbe Dockerfile die passende `compose.yaml`
+**5.3** Schreibe für dasselbe Dockerfile die passende `compose.yaml`
 (Service `app`, Build aus dem aktuellen Verzeichnis, Profil `test`, Host-Port 3030).
 
 ```yaml
@@ -346,13 +330,15 @@ CMD ["java","-jar","app.jar"]
 
 ---
 
-# Teil F – Szenario in drei Formen
+# Teil F – Szenario in beiden Formen
 
 Szenario: Eine Spring-Anwendung soll auf Host-Port 8080 erreichbar sein. Dahinter
-liegt eine Postgres-Datenbank mit persistentem Speicher. Beide Container liegen in
-einem eigenen Bridge-Netzwerk, die Datenbank ist von außen **nicht** erreichbar.
-Die Anwendung wird aus dem Dockerfile im Ordner `greeting` gebaut, ihr Profil ist
-`prod`, das Datenbankpasswort kommt aus einer env-Datei.
+liegt eine Postgres-Datenbank (`postgres:17.6`) mit dem benannten Volume `pgdaten`
+unter `/var/lib/postgresql/data`. Beide Container liegen im eigenen Bridge-Netzwerk
+`appnet`, die Datenbank ist von außen **nicht** erreichbar. Die Anwendung wird aus
+dem Dockerfile im Ordner `greeting` gebaut und horcht im Container auf 8080, ihr
+Profil ist `prod`. Das Datenbankpasswort (`POSTGRES_PASSWORD`) steht in der Datei
+`db.env`.
 
 **6.1** Schreibe alle nötigen `docker`-Befehle, in der richtigen Reihenfolge:
 
@@ -360,19 +346,14 @@ Die Anwendung wird aus dem Dockerfile im Ordner `greeting` gebaut, ihr Profil is
 →
 ```
 
-**6.2** Schreibe dieselbe Umgebung als `compose.yaml`:
+**6.2** Schreibe dieselbe Umgebung als `compose.yaml` mit den Services `app` und `db`:
 
 ```yaml
 →
 ```
 
-**6.3** Welche Variante ist in der Praxis vorzuziehen, und mit welchen zwei
-Argumenten aus den Folien?
-
-→
-
-**6.4** Welchen Befehl brauchst du, um die Umgebung samt selbst gebautem Image
-wieder zu entfernen — und was bleibt trotzdem übrig?
+**6.3** Welchen Befehl brauchst du, um die Compose-Umgebung samt selbst gebautem
+Image wieder zu entfernen — und was bleibt trotzdem übrig?
 
 →
 

@@ -1,88 +1,46 @@
 # Blatt 09 – Klausursimulation
 
 90 Minuten, 100 Punkte, keine Hilfsmittel. Erst alles schreiben, dann am Rechner
-prüfen — Teil F ist bewusst so gebaut, dass du sie wirklich laufen lassen kannst.
+prüfen — Teil E ist so gebaut, dass du ihn wirklich laufen lassen kannst.
 
 Laut `ABOUT.md`: alles über Docker, die Aufgaben des Foliensatzes sind
 repräsentativ, auch mit Spring Framework, CLI-Kommando zu Docker-Script und
-umgekehrt. Keine abstrakten Theoriefragen, aber das Verständnis muss da sein.
+umgekehrt. Keine Theoriefragen, aber das Verständnis muss da sein.
 
 | Teil | Thema | Punkte | Zeit |
 | --- | --- | --- | --- |
-| A | Grundlagen und Verständnis | 15 | 10 min |
-| B | Container bedienen | 15 | 10 min |
-| C | Dockerfile schreiben | 20 | 15 min |
-| D | Dockerfile optimieren | 15 | 15 min |
-| E | Storage, Networking, Compose | 20 | 20 min |
-| F | Spring im Container | 15 | 20 min |
+| A | Container bedienen | 15 | 10 min |
+| B | Dockerfile schreiben | 20 | 15 min |
+| C | Dockerfile optimieren | 15 | 15 min |
+| D | Storage, Networking, Compose | 25 | 25 min |
+| E | Spring im Container | 25 | 25 min |
 
 ---
 
-# Teil A – Grundlagen und Verständnis (15 P)
+# Teil A – Container bedienen (15 P)
 
-**A1** (2 P) Welche zwei Linux-Kernelfunktionen nutzt Docker, und wofür?
-
-→
-
-**A2** (2 P) Was unterscheidet ein Docker Image von einem Container?
-Zwei Unterschiede.
-
-→
-
-**A3** (2 P) Erklär copy-on-write in zwei Sätzen und sag, was beim Löschen des
-Containers mit den Änderungen passiert.
-
-→
-
-**A4** (2 P) Was bedeutet *immutable infrastructure* für die Schichten eines Images?
-
-→
-
-**A5** (2 P) Warum ist `latest` als Tag zu vermeiden? Zwei Gründe.
-
-→
-
-**A6** (2 P) Zerlege `registry.dhbw.de/cc/greeting:1.4.2` in seine vier Abschnitte.
-
-| Registry | User | Image | Version |
-| --- | --- | --- | --- |
-| … | … | … | … |
-
-**A7** (3 P) Ordne jedem Netzwerktreiber die Isolation (hoch/mittel/keine) und einen
-Einsatzzweck zu:
-
-| Treiber | Isolation | Einsatz |
-| --- | --- | --- |
-| `bridge` | … | … |
-| `host` | … | … |
-| `none` | … | … |
-
----
-
-# Teil B – Container bedienen (15 P)
-
-**B1** (3 P) Schreibe den Befehl: Image `nginx`, im Hintergrund, Host-Port 3030 auf
+**A1** (3 P) Schreibe den Befehl: Image `nginx`, im Hintergrund, Host-Port 3030 auf
 Container-Port 80, Name `web`, Container wird beim Beenden automatisch gelöscht.
 
 ```sh
 →
 ```
 
-**B2** (2 P) Du brauchst eine Shell in genau diesem laufenden Container.
+**A2** (2 P) Du brauchst eine Shell in genau diesem laufenden Container.
 Welcher Befehl?
 
 ```sh
 →
 ```
 
-**B3** (2 P) Welchen Befehl brauchst du für die Ressourcennutzung, welchen für die
+**A3** (2 P) Welchen Befehl brauchst du für die Ressourcennutzung, welchen für die
 Logausgabe?
 
 ```sh
 →
 ```
 
-**B4** (4 P) Übersetze in Prosa und nenne die Falle:
+**A4** (4 P) Beschreibe, was dieser Befehl tut, und nenne die Falle:
 
 ```sh
 docker container run -d -p 80:80 --net=host nginx
@@ -90,8 +48,8 @@ docker container run -d -p 80:80 --net=host nginx
 
 →
 
-**B5** (4 P) Ein Kollege startet einen Container, legt darin eine Datei an, löscht
-den Container und startet ihn neu aus demselben Image. Die Datei ist weg.
+**A5** (4 P) Ein Kollege startet einen Container, legt darin eine Datei an, löscht
+den Container und startet einen neuen aus demselben Image. Die Datei ist weg.
 Erklär ihm das Verhalten und nenne die zwei Mechanismen, mit denen er die Datei
 behalten könnte.
 
@@ -99,7 +57,7 @@ behalten könnte.
 
 ---
 
-# Teil C – Dockerfile schreiben (20 P)
+# Teil B – Dockerfile schreiben (20 P)
 
 Schreibe ein Dockerfile nach diesen Vorgaben und nach den Best Practices:
 
@@ -113,32 +71,32 @@ Schreibe ein Dockerfile nach diesen Vorgaben und nach den Best Practices:
 - Port 8080 wird freigegeben
 - Start: `java -jar app.jar` in Exec-Notation
 
-**C1** (14 P)
+**B1** (14 P)
 
 ```dockerfile
 →
 ```
 
-**C2** (2 P) Build-Befehl mit unique Tag, der das Datum enthält:
+**B2** (2 P) Build-Befehl mit einem unique Tag, der das heutige Datum enthält:
 
 ```sh
 →
 ```
 
-**C3** (2 P) Run-Befehl: Host-Port 8080, `APP_STAGE` auf `test` überschrieben,
+**B3** (2 P) Run-Befehl: Host-Port 8080, `APP_STAGE` auf `test` überschrieben,
 Container im Hintergrund.
 
 ```sh
 →
 ```
 
-**C4** (2 P) Warum steht das `COPY` der Jar-Datei am Ende und nicht am Anfang?
+**B4** (2 P) Warum steht das `COPY` der Jar-Datei am Ende und nicht am Anfang?
 
 →
 
 ---
 
-# Teil D – Dockerfile optimieren (15 P)
+# Teil C – Dockerfile optimieren (15 P)
 
 Gegeben:
 
@@ -160,7 +118,7 @@ WORKDIR /app
 CMD java -jar app.jar
 ```
 
-**D1** (8 P) Nenne acht Verstöße gegen die Best Practices, je mit einem Satz
+**C1** (8 P) Nenne acht Verstöße gegen die Best Practices, je mit einem Satz
 Begründung:
 
 | Nr. | Verstoß | Warum schlecht |
@@ -174,37 +132,37 @@ Begründung:
 | 7 | … | … |
 | 8 | … | … |
 
-**D2** (5 P) Schreibe die optimierte Fassung:
+**C2** (5 P) Schreibe die optimierte Fassung:
 
 ```dockerfile
 →
 ```
 
-**D3** (2 P) Wie kommen `DB_USER` und `DB_PASSWORD` stattdessen in den Container,
+**C3** (2 P) Wie kommen `DB_USER` und `DB_PASSWORD` stattdessen in den Container,
 und mit welchem Befehl könnte ein Angreifer sie im alten Image lesen?
 
 →
 
 ---
 
-# Teil E – Storage, Networking, Compose (20 P)
+# Teil D – Storage, Networking, Compose (25 P)
 
-**E1** (4 P) Volume oder Bind Mount? Trage ein:
+**D1** (4 P) Volume oder Bind Mount? Trage ein:
 
 | Anforderung | Volume oder Bind Mount | Begründung |
 | --- | --- | --- |
 | Datenbankdateien in Produktion | … | … |
 | Quellcode während der Entwicklung live im Container | … | … |
 | Konfigurationsdatei vom Host in den nginx-Container | … | … |
-| Logs, die ein Container-Neustart überleben sollen | … | … |
+| Daten, die das Löschen des Containers überleben sollen | … | … |
 
-**E2** (3 P) Zwei Container im Standardnetz `bridge`. Container A ruft
+**D2** (3 P) Zwei Container im Standardnetz `bridge`. Container A ruft
 `wget http://b` auf und bekommt `bad address`. Warum, und was sind die zwei
 möglichen Korrekturen?
 
 →
 
-**E3** (5 P) Übersetze diese Befehle in eine `compose.yaml` mit den Services
+**D3** (5 P) Übersetze diese Befehle in eine `compose.yaml` mit den Services
 `web` und `db`:
 
 ```sh
@@ -220,7 +178,7 @@ docker container run -d --name db --net=mynet \
 →
 ```
 
-**E4** (4 P) Beantworte zur Datei aus E3:
+**D4** (4 P) Beantworte zur Datei aus D3:
 
 - Welchen Hostnamen benutzt `web`, um `db` zu erreichen?
 
@@ -238,54 +196,101 @@ docker container run -d --name db --net=mynet \
 
   →
 
-**E5** (4 P) Schreibe einen Service `app`, dessen Image aus dem Dockerfile im
-Ordner `greeting` gebaut wird, der auf Host-Port 3030 hört, seine
-Umgebungsvariablen aus `greeting.env` bekommt und im Netz `mynet` liegt:
+**D5** (4 P) Schreibe eine `compose.yaml` mit einem Service `app`, dessen Image aus
+dem Dockerfile im Ordner `greeting` gebaut wird, der unter Host-Port 3030 erreichbar
+ist (die Anwendung horcht im Container auf 8080), seine Umgebungsvariablen aus
+`greeting/greeting.env` bekommt und im neu angelegten Netz `mynet` liegt:
 
 ```yaml
 →
 ```
 
+**D6** (5 P) Die Gegenrichtung. Schreibe die `docker`-Befehle, die dasselbe
+erreichen wie diese Datei, in der richtigen Reihenfolge:
+
+```yaml
+services:
+  cache:
+    image: redis:7
+    ports:
+      - "6380:6379"
+    environment:
+      LOG_LEVEL: warning
+    volumes:
+      - cachedaten:/data
+    networks:
+      - backend
+
+volumes:
+  cachedaten:
+
+networks:
+  backend:
+    driver: bridge
+```
+
+```sh
+→
+```
+
 ---
 
-# Teil F – Spring im Container (15 P)
+# Teil E – Spring im Container (25 P)
 
-Grundlage: `projekt/greeting`. Diesen Teil kannst du wirklich ausführen.
+Grundlage: `projekt/greeting` und `projekt/proxy/nginx.conf`. Diesen Teil kannst du
+wirklich ausführen. Die Anwendung horcht auf Port 8080, die Jar entsteht mit
+`./gradlew bootJar` unter `build/libs/app.jar`, der Proxy leitet an
+`http://greeting:8080` weiter.
 
 Anforderung: Die Anwendung soll im Profil `prod` auf Deutsch begrüßen und im Profil
 `en` auf Englisch. Die erlaubten ApiKeys kommen aus einer Umgebungsvariable; ohne
 gültigen Key kommt eine leere Antwort. Die Anwendung läuft im Container als
-unprivilegierter Benutzer auf Host-Port 8080, das Profil steht im Dockerfile
-auf `prod` und wird beim Start auf `en` überschrieben.
+unprivilegierter Benutzer, das Profil steht im Dockerfile auf `prod`.
 
-**F1** (4 P) Welche Java-Klassen legst du an oder änderst du, und welche
+**E1** (4 P) Welche Java-Klassen legst du an oder änderst du, und welche
 Annotationen stehen über jeder? (Klassenköpfe reichen.)
 
 ```java
 →
 ```
 
-**F2** (3 P) Mit welcher Annotation liest du die erlaubten ApiKeys als `String[]`
+**E2** (3 P) Mit welcher Annotation liest du die erlaubten ApiKeys als `String[]`
 ein, inklusive Standardwert? Schreibe die zwei Zeilen.
 
 ```java
 →
 ```
 
-**F3** (4 P) Schreibe das Dockerfile.
+**E3** (5 P) Schreibe das Dockerfile (Baseimage `eclipse-temurin:21-jre-alpine`).
 
 ```dockerfile
 →
 ```
 
-**F4** (2 P) Schreibe die Befehlskette: Jar bauen, Image bauen, Container starten
-mit überschriebenem Profil und ApiKeys aus `greeting.env`.
+**E4** (3 P) Schreibe die Befehlskette: Jar bauen, Image `greeting:1.0` bauen,
+Container im Hintergrund auf Host-Port 8080 starten, Profil auf `en` überschrieben,
+ApiKeys aus `greeting.env`.
 
 ```sh
 →
 ```
 
-**F5** (2 P) Du änderst nur die Java-Datei und rufst `docker container run` erneut
+**E5** (5 P) Schreibe die `compose.yaml` für `projekt/`: Service `proxy` (Image
+`nginx`, Hostport 8080 auf Containerport 80, `proxy/nginx.conf` eingebunden unter
+`/etc/nginx/conf.d/default.conf`) und der Spring-Service (aus `greeting/` gebaut,
+Variablen aus `greeting/greeting.env`), beide im neu angelegten Bridge-Netzwerk
+`appnet`.
+
+```yaml
+→
+```
+
+**E6** (3 P) Wie muss der Spring-Service in E5 heißen, damit der Proxy ihn findet,
+und warum braucht er selbst keinen `ports`-Eintrag?
+
+→
+
+**E7** (2 P) Du änderst nur die Java-Datei und rufst `docker compose up` erneut
 auf — die Änderung ist nicht da. Welche zwei Schritte hast du vergessen?
 
 →
@@ -297,23 +302,21 @@ auf — die Änderung ist nicht da. Welche zwei Schritte hast du vergessen?
 | Teil | Erreichbar | Erreicht |
 | --- | --- | --- |
 | A | 15 | … |
-| B | 15 | … |
-| C | 20 | … |
-| D | 15 | … |
-| E | 20 | … |
-| F | 15 | … |
+| B | 20 | … |
+| C | 15 | … |
+| D | 25 | … |
+| E | 25 | … |
 | **Summe** | **100** | … |
 
 Unter 60 Punkten: das Blatt zu dem schwächsten Teil noch einmal durcharbeiten.
 
 | Teil | Zugehöriges Blatt |
 | --- | --- |
-| A | [01](01-grundlagen-und-container.md), [02](02-images-und-dockerfile.md), [05](05-networking.md) |
-| B | [01](01-grundlagen-und-container.md) |
-| C | [02](02-images-und-dockerfile.md), [03](03-best-practices.md) |
-| D | [03](03-best-practices.md) |
-| E | [04](04-storage.md), [05](05-networking.md), [06](06-compose.md) |
-| F | [07](07-spring-und-docker.md) |
+| A | [01](01-grundlagen-und-container.md) |
+| B | [02](02-images-und-dockerfile.md), [03](03-best-practices.md) |
+| C | [03](03-best-practices.md) |
+| D | [04](04-storage.md), [05](05-networking.md), [06](06-compose.md), [08](08-uebersetzen-cli-und-script.md) |
+| E | [07](07-spring-und-docker.md) |
 
 Danach die Originalaufgaben mit Lösung: `cloud-computing/origin-tasks/`.
 Der Probe-Programmentwurf in `origin-tasks/task-probe-programmentwurf/` ist die
