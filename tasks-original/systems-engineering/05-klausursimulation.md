@@ -1,7 +1,7 @@
-# Systems Engineering – Klausursimulation
+# Systems Engineering – Blatt 05: Klausursimulation
 
-Arbeitsblatt 4 von 5. Aufbau, Punkteverteilung und Aufgabentypen sind aus den
-Altklausuren übernommen, die Sachverhalte sind neu.
+Aufbau, Punkteverteilung und Aufgabentypen sind aus den Altklausuren übernommen,
+die Sachverhalte sind neu.
 
 Dauer: 120 Minuten · Max. Punkte: 100 · Bestehensgrenze: 50 P · Hilfsmittel: keine
 
@@ -10,7 +10,7 @@ Dauer: 120 Minuten · Max. Punkte: 100 · Bestehensgrenze: 50 P · Hilfsmittel: 
 | max. Punktzahl: | 34 | 19 | 8 | 19 | 10 | 10 | 100 |
 | erreicht: | … | … | … | … | … | … | … |
 
-So arbeitest du damit: Uhr stellen, Blätter 01–03 weglegen, durchschreiben.
+So arbeitest du damit: Uhr stellen, Blätter 01–04 weglegen, durchschreiben.
 Erst danach kontrollieren – die Hinweise auf die Fundstellen stehen am Ende
 dieses Blattes, nicht bei den Aufgaben.
 
@@ -230,7 +230,7 @@ Erst jetzt nachschlagen. Fundstellen in
 | 1g | `softwaretechnik/05-methodenbewertung` |
 | 1h | `agiles-software-engineering/06-definition-of-done-und-ready` |
 | 1i | `use-cases/02-abgrenzung-und-use-case-begriff` |
-| 2a | nur in der Literatur: `origin/.../07 LE 4_ .../Sutherland, J_ Scrum Handbook` |
+| 2a | `agiles-software-engineering/03-agile-verfahren` (zwei Schaubilder zu Scrum) |
 | 2b | `agiles-software-engineering/07-agile-fluency-grundlagen`, `08-agile-fluency-zonen` |
 | 2c | `agiles-software-engineering/05-agile-begriffe` |
 | 3a | `use-cases/06-beziehungen-zwischen-use-cases` |
@@ -251,9 +251,5 @@ Vergleichbare Originalaufgaben mit Musterlösung bzw. Originalwortlaut:
 - `dski-sources-3/systems-engineering/origin-tasks/task-7` – alle BSDS-Fragen aus
   den Altklausuren im Originalwortlaut
 
-Themen aus LE 1, 5, 10 und dem Exkurs, die in den Altklausuren vorkommen,
-stehen in `05-altklausur-themen.md`.
-
-**Achtung bei 2a und 1i:** Die Komponenten von Scrum und die Arten von Akteuren
-werden in den Klausuren regelmäßig gefragt, stehen aber nicht in den
-Vorlesungsfolien unter `topics/`. Siehe `02-agil.md`, Stufe 4.
+**Achtung bei 2a:** Die Komponenten von Scrum werden in den Klausuren regelmäßig
+gefragt, stehen in den Folien aber nur als zwei Schaubilder. Siehe Blatt 03, Abschnitt 6.
