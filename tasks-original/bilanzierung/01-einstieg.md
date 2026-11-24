@@ -461,7 +461,7 @@ Bei jeder Kennzahl sind es drei Schritte: ausrechnen, mit der Faustregel verglei
 
 ## 17 - Alle Formeln aus dem Kopf
 
-Erst wenn du die Stationen 1 bis 16 gemacht hast. Schreibe jede Formel auf, ohne nach oben zu schauen, und dahinter die Faustregel, wenn es eine gibt.
+Erst wenn du die Stationen 1 bis 16 gemacht hast. Schreibe jede Formel auf, ohne nach oben zu schauen, und dahinter die Faustregel, wenn es eine gibt. Kontrolle danach mit [formeln.md](formeln.md).
 
 *Aufgabe*: Anschaffungskosten · lineare Abschreibung · geometrisch-degressive Abschreibung · gezeichnetes Kapital und Kapitalrücklage bei einer Aktienausgabe · Jahresüberschuss · EBIT · Umsatzrendite · Eigenkapitalrentabilität · Zinsdeckungsgrad · Eigenkapitalquote · DIO · DRO · DPO
 
@@ -473,8 +473,10 @@ Erst wenn du die Stationen 1 bis 16 gemacht hast. Schreibe jede Formel auf, ohne
 
 # Weiter
 
-Wenn das hier sitzt, weiter mit den Originalaufgaben unter
-`dski-sources-3/bilanzierung/origin-tasks/`:
+Wenn das hier sitzt, weiter mit [Blatt 02](02-wie-die-uebungsblaetter.md): dieselben
+Aufgabentypen wie die Übungsblätter der Vorlesung, ohne Erklärungen.
+
+Danach die Originalaufgaben unter `dski-sources-3/bilanzierung/origin-tasks/`:
 
 - `task-1`: Aufstellungs-, Prüfungs- und Offenlegungspflicht an vier Unternehmen. Keine Lösung hinterlegt.
 - `task-2`: Geschäftsvorfälle buchen und den kompletten Jahresabschluss aufstellen. Lösung nur zu Kapitel 9.
