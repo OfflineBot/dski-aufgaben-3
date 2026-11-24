@@ -114,8 +114,8 @@ http://localhost:8080 erreichbar ist.
 
 →
 
-**3.4** Überschreibe `GREETING` beim Start mit `-e GREETING="Moin"`, ohne das Image
-neu zu bauen. Was zeigt die Antwort?
+**3.4** Erstelle einen neuen Container aus `zeitserver:1.0` und überschreibe dabei
+`GREETING` mit `-e GREETING="Moin"`, ohne das Image neu zu bauen. Was zeigt die Antwort?
 
 ```sh
 →
