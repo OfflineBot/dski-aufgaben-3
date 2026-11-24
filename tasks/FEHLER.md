@@ -88,3 +88,58 @@ Stand: 24.11.2026
 
 - Tag zerlegen: `hub.docker.com/plexinc/pms-docker:latest` → User ist `plexinc`, Image ist `pms-docker`.
 - Jeder Container hat seine eigene beschreibbare Schicht. Zehn Container sind zehn Schichten.
+
+---
+
+# Bilanzierung
+
+| Nr. | Was nicht sitzt | Zuletzt |
+| --- | --- | --- |
+| B1 | Aktiva oder Passiva zuordnen | Blatt 01, Station 1 |
+| B2 | Forderung gegen erhaltene Anzahlung | Blatt 01, Station 7 |
+| B3 | Degressive Abschreibung ab Jahr 2, Buchwert | Blatt 01, Station 6 |
+| B4 | Nachträgliche Anschaffungskosten | Blatt 01, Station 4 |
+| B5 | Plan oder möglicher Gewinn: nichts buchen | Blatt 01, Station 3d, 8d |
+| B6 | Eigenkapital: Merkmale und Arten erklären | Blatt 01, Station 2c, 2d |
+
+## B1 - Aktiva oder Passiva zuordnen
+
+- Du: Bankkredit ins Umlaufvermögen, Kasse ins Eigenkapital, Rohstoffe zu den Rückstellungen, gezeichnetes Kapital offen
+- Richtig: Kasse und Rohstoffe sind Aktiva (Umlaufvermögen). Bankkredit ist Passiva (Verbindlichkeit). Gezeichnetes Kapital ist Passiva (Eigenkapital).
+- Regel: Haben wir es → Aktiva. Schulden wir es oder gehört es den Eigentümern → Passiva.
+- Wo: Blatt 01, Station 1
+
+## B2 - Forderung gegen erhaltene Anzahlung
+
+- Du: geliefert und nicht bezahlt → Kasse +. Bezahlt und nicht geliefert → Forderung +.
+- Richtig: geliefert, nicht bezahlt → Forderungen + und Umsatzerlöse +. Bezahlt, nicht geliefert → Kasse + und Erhaltene Anzahlungen +, kein Umsatz.
+- Regel: Geliefert? Dann Umsatz. Bezahlt? Dann Kasse. Nur Vertrag → nichts.
+- Wo: Blatt 01, Station 7
+
+## B3 - Degressive Abschreibung ab Jahr 2, Buchwert
+
+- Du: Jahr 2 = 60.000 × 0,3². Buchwert nach zwei Jahren offen.
+- Richtig: Jahr 2 = (60.000 − 18.000) × 0,3 = 12.600. Buchwert = Kaufpreis − alle bisherigen Abschreibungen.
+- Regel: Der Satz geht immer auf den Restwert, nie wieder auf den Kaufpreis.
+- Wo: Blatt 01, Station 6b, 6c
+
+## B4 - Nachträgliche Anschaffungskosten
+
+- Du: später angebauter Roboterarm „noch nicht“, Ergebnis 120.000
+- Richtig: Er gehört dazu, Ergebnis 135.000.
+- Regel: Spätere Erweiterung = nachträgliche Anschaffungskosten. Draußen bleiben nur Zinsen und laufende Kosten.
+- Wo: Blatt 01, Station 4
+
+## B5 - Plan oder möglicher Gewinn: nichts buchen
+
+- Du: geplanter Hallenbau mit Kredit → Rückstellung. Herstellkosten unter dem Verkaufspreis → „−1.000?“
+- Richtig: beide Male keine Buchung.
+- Regel: Rückstellung nur bei einer wahrscheinlichen Schuld oder einem drohenden Verlust. Ein Plan ist keine Schuld, ein Gewinn zählt erst beim Verkauf.
+- Wo: Blatt 01, Station 3d, 8d
+
+## B6 - Eigenkapital: Merkmale und Arten erklären
+
+- Du: Risiko = „man verwaltet das Risiko selber“, unbefristet = „nutzen, wann man will“. Arten fehlen.
+- Richtig: Eigenkapital haftet für Verluste und muss nie zurückgezahlt werden. Arten: gezeichnetes Kapital, Kapitalrücklage, Gewinnrücklage, Gewinnvortrag, Jahresüberschuss.
+- Regel: Die ersten zwei kommen von den Eigentümern, die anderen sind selbst verdient.
+- Wo: Blatt 01, Station 2c, 2d
