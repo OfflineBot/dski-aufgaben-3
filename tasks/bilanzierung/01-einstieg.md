@@ -318,8 +318,17 @@ d) -1.000? oder bleibt eher gleich? weil noch nicht ausgeliefert?
 *Aufgabe*: Sag für jeden Vorfall, ob Geld fließt, in welche Richtung und welche Art von Cash Flow es ist. Rechne am Ende die drei Arten und die Summe aus. 1) Die Gesellschafter zahlen 80.000 € ein. 2) Ein Lieferwagen wird für 30.000 € bar gekauft. 3) Waren für 45.000 € werden bar verkauft. 4) Waren für 20.000 € werden auf Ziel verkauft. 5) 6.000 € Miete werden überwiesen. 6) Der Lieferwagen wird um 5.000 € abgeschrieben. 7) 10.000 € eines Kredits werden getilgt. 8) Rohstoffe für 12.000 € werden bar gekauft.
 
 ```
-
+1) finanzierung -> +80.000
+2) Investition -> -30.000
+3) Finanzierung -> +45.000
+4) Operativ -> +20.000
+5) Operativ -> +6.000
+6) Investition -> -5.000
+7) Operativ -> -10.000
+8) Investition -> 12.000
 ```
+
+(ich kenne manche worte mit definiton nicht so gut. zb tilgung, was das bedeutet etc)
 
 ## 10 - Geschäftsvorfälle eintragen und den Jahresüberschuss bestimmen
 
@@ -345,8 +354,14 @@ d) -1.000? oder bleibt eher gleich? weil noch nicht ausgeliefert?
 *Aufgabe*: Ein Unternehmen hat im ersten Jahr diese elf Vorfälle. Schreib zu jedem die zwei Positionen mit Plus oder Minus. Bestimme danach a) den Jahresüberschuss, b) den Kassenbestand, c) die Bilanzsumme. Kontrolle: Aktiva und Passiva müssen gleich sein. 1) Gründung durch Einlage von 60.000 €. 2) Bankkredit über 40.000 €. 3) Kauf einer Maschine für 50.000 € in bar. 4) Kauf von Rohstoffen für 10.000 € auf Ziel. 5) Rohstoffe für 6.000 € werden in der Produktion verbraucht. 6) Gehälter von 20.000 € werden überwiesen. 7) Verkauf von Waren für 45.000 € in bar. 8) Verkauf von Waren für 15.000 € auf Ziel. 9) Die Maschine wird um 5.000 € abgeschrieben. 10) 2.000 € Zinsen werden an die Bank gezahlt. 11) Ein Kunde klagt, das Unternehmen bildet eine Rückstellung von 7.000 €.
 
 ```
-
+    Jahresüberschuss    Kassenbestand       Bilanzsumme
+1.  60.000              60.000              60.000
+2.  100.000             100.000             100.000
+3.  50.000              50.000              150.000
+4.  40.000              40.000              160.000
 ```
+
+ok nein hab ich noch nicht verstanden!
 
 ---
 
@@ -378,7 +393,7 @@ Bei jeder Kennzahl sind es drei Schritte: ausrechnen, mit der Faustregel verglei
 *Aufgabe*: Berechne Jahresüberschuss, EBIT, Umsatzrendite und Eigenkapitalrentabilität. Vergleiche jeden Wert mit der Faustregel und deute ihn in einem Satz. Daten der GuV: Umsatzerlöse 400.000 · Materialaufwand 140.000 · Personalaufwand 140.000 · Abschreibungen 30.000 · sonstiger betrieblicher Aufwand 40.000 · Zinsaufwand 10.000 · Steueraufwand 12.000. Das Eigenkapital in der Bilanz beträgt einschließlich Jahresüberschuss 128.000.
 
 ```
-
+verstehe ich noch nicht.. die erklärung ist nicht gut
 ```
 
 ## 12 - Finanzlage: Bleibt das Unternehmen zahlungsfähig
@@ -402,7 +417,9 @@ Bei jeder Kennzahl sind es drei Schritte: ausrechnen, mit der Faustregel verglei
 *Aufgabe*: Berechne Zinsdeckungsgrad und Eigenkapitalquote und beurteile den operativen Cash Flow. Vergleiche mit den Faustregeln und deute in je einem Satz. Daten: EBIT 50.000 · Zinsaufwand 10.000 · Eigenkapital 128.000 · Bilanzsumme 300.000 · operativer Cash Flow 55.000 · Investitions-Cash-Flow −40.000 · Finanzierungs-Cash-Flow −5.000.
 
 ```
-
+zinsdeckungsgrad = 50.000 / 10.000 = 5
+Eigenkapitalquote = 128.000 / 300.000 * 100
+invsetition war 40.000. also sollte über 40.000 sein.. aber ich weiß nicht weiter
 ```
 
 ## 13 - Vermögensstruktur: Wie lange ist Geld gebunden
@@ -427,7 +444,9 @@ Bei jeder Kennzahl sind es drei Schritte: ausrechnen, mit der Faustregel verglei
 *Aufgabe*: Berechne DIO, DRO und DPO und deute jeden Wert in einem Satz. Daten: Umsatzerlöse 400.000 · Vorräte 30.000 · Forderungen 40.000 · Verbindlichkeiten aus Lieferung und Leistung 30.000.
 
 ```
-
+DIO = 365 * 30.000 / 400.000: ~ 30 Tage
+DRO = 365 * 40.000 / 400.000: 36.5 Tage
+DPO = 365 * 30.000 / 400.000: = DIO
 ```
 
 ## 14 - Insolvenzrisiko: Überschuldung und Illiquidität
@@ -452,7 +471,10 @@ Bei jeder Kennzahl sind es drei Schritte: ausrechnen, mit der Faustregel verglei
 *Aufgabe*: Zwei Firmen, beide mit einer Bilanzsumme von 1.000. Firma A, Aktiva: Anlagevermögen 700 · Vorräte 150 · Forderungen 100 · Kasse 50. Firma A, Passiva: Eigenkapital 40 · langfristige Bankdarlehen 600 · kurzfristige Bankdarlehen 260 · Verbindlichkeiten aus Lieferung und Leistung 100. Firma B, Aktiva: Anlagevermögen 500 · Vorräte 100 · Forderungen 150 · Kasse 250. Firma B, Passiva: Eigenkapital 600 · langfristige Bankdarlehen 250 · kurzfristige Bankdarlehen 50 · Verbindlichkeiten aus Lieferung und Leistung 100. a) Berechne für beide die Eigenkapitalquote. b) Welche Firma ist eher von Überschuldung bedroht, und warum? c) Vergleiche bei beiden die Kasse mit den kurzfristigen Schulden. Wo droht Illiquidität? d) Firma A muss eine Rückstellung von 60 bilden. Was passiert mit dem Eigenkapital, und ist die Firma dann überschuldet?
 
 ```
-
+a) ?
+b) weiß ihc nicht. ist nicht so übersichtlich. verstehe ich noch nicht ganz.. 
+c) wie bei b
+d) ?
 ```
 
 ---
@@ -494,7 +516,9 @@ Bei jeder Kennzahl sind es drei Schritte: ausrechnen, mit der Faustregel verglei
 *Aufgabe*: Beurteile für jedes Unternehmen: Welche Abschlüsse muss es aufstellen? Muss es prüfen lassen? Muss es offenlegen, und bis wann? a) Ein Einzelkaufmann betreibt einen Blumenladen mit 250.000 € Umsatz und 30.000 € Jahresüberschuss. b) Eine Werkzeugbau GmbH hat 15 Mio. € Bilanzsumme, 30 Mio. € Umsatz, 120 Arbeitnehmer und keine Tochterunternehmen. c) Eine börsennotierte Solar AG hat 4 Mrd. € Bilanzsumme, 6 Mrd. € Umsatz, 9.000 Arbeitnehmer und 30 Tochterunternehmen.
 
 ```
-
+a) (klein) nicht aufstellen, weil darunter, muss nicht prüfen lassen, muss uach nicht
+b) (mittel groß), aufstllen ja (in 6 monaten), prüfenlassen ja, offenlegen ja
+c) (groß) ja, ja, ja
 ```
 
 ## 16 - Wozu der Jahresabschluss dient
@@ -518,7 +542,15 @@ Bei jeder Kennzahl sind es drei Schritte: ausrechnen, mit der Faustregel verglei
 *Aufgabe*: a) Welche Funktion steckt jeweils dahinter? 1) Das Finanzamt berechnet aus dem Gewinn die Steuer. 2) Die Aktionäre beschließen eine Dividende und dürfen dabei den Jahresüberschuss nicht überschreiten. 3) Nach einer Insolvenz prüft ein Gericht anhand der Bücher, was passiert ist. 4) Ein Lieferant schaut in den Abschluss, bevor er auf Rechnung liefert. b) Erkläre die drei Funktionen in je einem Satz mit eigenen Worten.
 
 ```
+a) 
+1. zahlungsbemessung
+2. zahlungsbemessung
+3. dokumentation
+4. information
 
+b) zahlnugsbemessung: schaut ob man zahlen kann (wie es ums geld geht)
+dokumentation: nachvollziehen, wie es zum jetzigen stand kam
+information: allgemeine informationen zur aktuellen situation
 ```
 
 ---
@@ -532,7 +564,7 @@ Erst wenn du die Stationen 1 bis 16 gemacht hast. Schreibe jede Formel auf, ohne
 *Aufgabe*: Anschaffungskosten · lineare Abschreibung · geometrisch-degressive Abschreibung · gezeichnetes Kapital und Kapitalrücklage bei einer Aktienausgabe · Jahresüberschuss · EBIT · Umsatzrendite · Eigenkapitalrentabilität · Zinsdeckungsgrad · Eigenkapitalquote · DIO · DRO · DPO
 
 ```
-
+ohje, das kann ich jetzt noch gar nicht. noch nichts!!
 ```
 
 ---

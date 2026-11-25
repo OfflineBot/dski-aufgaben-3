@@ -2,7 +2,7 @@
 
 Nur was noch nicht sitzt. Was du kannst, fliegt raus. Neue Fehler kommen nach jeder Korrektur dazu.
 
-Stand: 24.11.2026
+Stand: 25.11.2026
 
 ---
 
@@ -96,11 +96,19 @@ Stand: 24.11.2026
 | Nr. | Was nicht sitzt | Zuletzt |
 | --- | --- | --- |
 | B1 | Aktiva oder Passiva zuordnen | Blatt 01, Station 1 |
-| B2 | Forderung gegen erhaltene Anzahlung | Blatt 01, Station 7 |
+| B2 | Fließt Geld oder nicht: Forderung, Anzahlung, auf Ziel | Blatt 01, Station 7, 9 |
 | B3 | Degressive Abschreibung ab Jahr 2, Buchwert | Blatt 01, Station 6 |
 | B4 | Nachträgliche Anschaffungskosten | Blatt 01, Station 4 |
 | B5 | Plan oder möglicher Gewinn: nichts buchen | Blatt 01, Station 3d, 8d |
 | B6 | Eigenkapital: Merkmale und Arten erklären | Blatt 01, Station 2c, 2d |
+| B7 | Art des Cash Flows und Vorzeichen | Blatt 01, Station 9 |
+| B8 | Gewinn ist nicht Kasse | Blatt 01, Station 10 |
+| B9 | Von der GuV zu Jahresüberschuss und EBIT | Blatt 01, Station 11 |
+| B10 | Kennzahlen deuten, nicht nur ausrechnen | Blatt 01, Station 12, 13 |
+| B11 | Überschuldung und Illiquidität prüfen | Blatt 01, Station 14 |
+| B12 | Pflichten: welche Abschlüsse, welche Frist | Blatt 01, Station 15 |
+| B13 | Zahlungsbemessung erklären | Blatt 01, Station 16b |
+| B14 | Formeln aus dem Kopf | Blatt 01, Station 17 |
 
 ## B1 - Aktiva oder Passiva zuordnen
 
@@ -109,12 +117,13 @@ Stand: 24.11.2026
 - Regel: Haben wir es → Aktiva. Schulden wir es oder gehört es den Eigentümern → Passiva.
 - Wo: Blatt 01, Station 1
 
-## B2 - Forderung gegen erhaltene Anzahlung
+## B2 - Fließt Geld oder nicht: Forderung, Anzahlung, auf Ziel
 
 - Du: geliefert und nicht bezahlt → Kasse +. Bezahlt und nicht geliefert → Forderung +.
 - Richtig: geliefert, nicht bezahlt → Forderungen + und Umsatzerlöse +. Bezahlt, nicht geliefert → Kasse + und Erhaltene Anzahlungen +, kein Umsatz.
 - Regel: Geliefert? Dann Umsatz. Bezahlt? Dann Kasse. Nur Vertrag → nichts.
-- Wo: Blatt 01, Station 7
+- Auch: Verkauf auf Ziel und Abschreibung als Cash Flow gezählt. Beides ist kein Cash Flow.
+- Wo: Blatt 01, Station 7, 9 (Vorfall 4 und 6)
 
 ## B3 - Degressive Abschreibung ab Jahr 2, Buchwert
 
@@ -143,3 +152,58 @@ Stand: 24.11.2026
 - Richtig: Eigenkapital haftet für Verluste und muss nie zurückgezahlt werden. Arten: gezeichnetes Kapital, Kapitalrücklage, Gewinnrücklage, Gewinnvortrag, Jahresüberschuss.
 - Regel: Die ersten zwei kommen von den Eigentümern, die anderen sind selbst verdient.
 - Wo: Blatt 01, Station 2c, 2d
+
+## B7 - Art des Cash Flows und Vorzeichen
+
+- Du: Warenverkauf → Finanzierung. Tilgung → operativ. Rohstoffe → Investition. Miete mit Plus.
+- Richtig: Warenverkauf, Miete, Rohstoffe sind operativ. Tilgung ist Finanzierung. Wir zahlen → Minus.
+- Regel: Investition nur bei Anlagevermögen. Finanzierung nur bei Eigentümern und Bank. Der Rest ist operativ.
+- Wo: Blatt 01, Station 9 (Vorfall 3, 5, 7, 8)
+
+## B8 - Gewinn ist nicht Kasse
+
+- Du: Jahresüberschuss nach Einlage 60.000, nach Kredit 100.000. Bilanzsumme steigt beim Barkauf der Maschine.
+- Richtig: Einlage, Kredit und Maschinenkauf ändern den Gewinn nicht. Barkauf tauscht nur Kasse gegen Maschine, die Bilanzsumme bleibt.
+- Regel: Der Gewinn ändert sich nur bei Ertrag oder Aufwand. Jeder Vorfall hat zwei Positionen.
+- Wo: Blatt 01, Station 10
+
+## B9 - Von der GuV zu Jahresüberschuss und EBIT
+
+- Du: nicht gelöst
+- Richtig: Umsatz − alle Aufwendungen = Jahresüberschuss. EBIT = Jahresüberschuss + Zinsen + Steuern.
+- Regel: Treppe: Umsatz → EBIT → minus Zinsen und Steuern → Jahresüberschuss.
+- Wo: Blatt 01, Station 11
+
+## B10 - Kennzahlen deuten, nicht nur ausrechnen
+
+- Du: Zahl hingeschrieben, Vergleich mit der Faustregel und Deutung fehlen. Eigenkapitalquote nicht ausgerechnet, DIO nur geschätzt.
+- Richtig: immer drei Schritte: ausrechnen, mit der Faustregel vergleichen, ein Satz Deutung.
+- Regel: Operativer Cash Flow > Investitionen heißt: Investitionen aus eigener Kraft bezahlt.
+- Wo: Blatt 01, Station 12, 13
+
+## B11 - Überschuldung und Illiquidität prüfen
+
+- Du: nicht gelöst
+- Richtig: Überschuldung → Eigenkapital anschauen. Illiquidität → Kasse gegen kurzfristige Schulden.
+- Regel: Eine Rückstellung senkt das Eigenkapital, aber nicht die Kasse.
+- Wo: Blatt 01, Station 14
+
+## B12 - Pflichten: welche Abschlüsse, welche Frist
+
+- Du: nur ja/nein. Einzelkaufmann als „klein“ eingestuft.
+- Richtig: HGB + Steuerrecht, bei Töchtern Konzernabschluss, börsennotiert nach IFRS. Aufstellen: groß 3 Monate, sonst 6. Offenlegen: 12 Monate.
+- Regel: Größenklassen gelten nur für Kapitalgesellschaften.
+- Wo: Blatt 01, Station 15
+
+## B13 - Zahlungsbemessung erklären
+
+- Du: „schaut, ob man zahlen kann“
+- Richtig: Aus dem Gewinn wird berechnet, wie viel gezahlt wird: Steuern und Dividende.
+- Regel: Ob man zahlen kann, ist Liquidität, keine Funktion des Abschlusses.
+- Wo: Blatt 01, Station 16b
+
+## B14 - Formeln aus dem Kopf
+
+- Du: noch keine
+- Richtig: siehe `bilanzierung/formeln.md`
+- Wo: Blatt 01, Station 17
